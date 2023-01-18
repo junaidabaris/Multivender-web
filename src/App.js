@@ -21,7 +21,7 @@ function App() {
         <Route path='page-not-found' element={<PageNotFoundPage />} />
         <Route path='/products' element={<ProductsPage />} />
         <Route path='/product-detail' element={<ProductDetailPage />} />
-        <Route path='/venderLogin' element={<MainVender setshow={setshow}/>} />
+        <Route path='/venderLogin' element={<MainVender setshow={setshow} />} />
       </Routes>
       {show && <Footer />}
     </>
