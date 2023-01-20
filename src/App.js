@@ -19,6 +19,10 @@ import ProductsPage from './pages/products';
 import MainVender from './venderFile/vender-page/mainPage';
 import { useState } from 'react';
 import DashbordPage from './venderFile/vender-page/dashbord';
+import UploadedFilesPage from './venderFile/vender-page/UploadedFilesPage';
+import CouponsPage from './venderFile/vender-page/couponsPage';
+import RecievedRefundPage from './venderFile/vender-page/recievedRefundPage';
+import ShopSettingPage from './venderFile/vender-page/shopSettingPage';
 function App() {
   const [show, setshow] = useState(true)
   return (
@@ -32,7 +36,11 @@ function App() {
         <Route path='/products' element={<ProductsPage />} />
         <Route path='/product-detail' element={<ProductDetailPage />} />
         <Route path='/seller' element={<MainVender setshow={setshow} />}>
-          <Route path='' element={<DashbordPage/>}/>
+          <Route path='' element={<DashbordPage />} />
+          <Route path={'uploads'} element={<UploadedFilesPage />} />
+          <Route path={'coupon'} element={<CouponsPage />} />
+          <Route path={'refund-request'} element={<RecievedRefundPage />} />
+          <Route path={'shop'} element={<ShopSettingPage />} />
         </Route>
       </Routes>
       {show && <Footer />}
