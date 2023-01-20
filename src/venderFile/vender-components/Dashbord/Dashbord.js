@@ -1,30 +1,30 @@
 function Dashbord (){
     return <>
-    <div class="px-15px px-lg-25px">
-        <div class="aiz-titlebar mt-2 mb-4">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h1 class="h3 text-primary">Dashboard</h1>
+    <div className="px-15px px-lg-25px">
+        <div className="aiz-titlebar mt-2 mb-4">
+            <div className="row align-items-center">
+                <div className="col-md-6">
+                    <h1 className="h3 text-primary">Dashboard</h1>
                 </div>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-sm-6 col-md-6 col-xxl-3">
-                <div class="card shadow-none mb-4 bg-primary py-4">
-                    <div class="card-body">
-                        <div class="row align-items-center">
-                            <div class="col">
-                                <p class="small text-muted mb-0">
-                                    <span class="fe fe-arrow-down fe-12"></span>
-                                    <span class="fs-14 text-light">Products</span>
+        <div className="row">
+            <div className="col-sm-6 col-md-6 col-xxl-3">
+                <div className="card shadow-none mb-4 bg-primary py-4">
+                    <div className="card-body">
+                        <div className="row align-items-center">
+                            <div className="col">
+                                <p className="small text-muted mb-0">
+                                    <span className="fe fe-arrow-down fe-12"></span>
+                                    <span className="fs-14 text-light">Products</span>
                                 </p>
-                                <h3 class="mb-0 text-white fs-30">
+                                <h3 className="mb-0 text-white fs-30">
                                     3
                                 </h3>
 
                             </div>
-                            <div class="col-auto text-right">
+                            <div className="col-auto text-right">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="64.001" height="64"
                                     viewBox="0 0 64.001 64">
                                     <path id="Path_66" data-name="Path 66"
@@ -36,21 +36,21 @@ function Dashbord (){
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-6 col-xxl-3">
-                <div class="card shadow-none mb-4 bg-primary py-4">
-                    <div class="card-body">
-                        <div class="row align-items-center">
-                            <div class="col">
-                                <p class="small text-muted mb-0">
-                                    <span class="fe fe-arrow-down fe-12"></span>
-                                    <span class="fs-14 text-light">Rating</span>
+            <div className="col-sm-6 col-md-6 col-xxl-3">
+                <div className="card shadow-none mb-4 bg-primary py-4">
+                    <div className="card-body">
+                        <div className="row align-items-center">
+                            <div className="col">
+                                <p className="small text-muted mb-0">
+                                    <span className="fe fe-arrow-down fe-12"></span>
+                                    <span className="fs-14 text-light">Rating</span>
                                 </p>
-                                <h3 class="mb-0 text-white fs-30">
+                                <h3 className="mb-0 text-white fs-30">
                                     0
                                 </h3>
 
                             </div>
-                            <div class="col-auto text-right">
+                            <div className="col-auto text-right">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="61.143"
                                     viewBox="0 0 64 61.143">
                                     <path id="Path_57" data-name="Path 57"
@@ -62,20 +62,20 @@ function Dashbord (){
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-6 col-xxl-3">
-                <div class="card shadow-none mb-4 bg-primary py-4">
-                    <div class="card-body">
-                        <div class="row align-items-center">
-                            <div class="col">
-                                <p class="small text-muted mb-0">
-                                    <span class="fe fe-arrow-down fe-12"></span>
-                                    <span class="fs-14 text-light">Total Order</span>
+            <div className="col-sm-6 col-md-6 col-xxl-3">
+                <div className="card shadow-none mb-4 bg-primary py-4">
+                    <div className="card-body">
+                        <div className="row align-items-center">
+                            <div className="col">
+                                <p className="small text-muted mb-0">
+                                    <span className="fe fe-arrow-down fe-12"></span>
+                                    <span className="fs-14 text-light">Total Order</span>
                                 </p>
-                                <h3 class="mb-0 text-white fs-30">
+                                <h3 className="mb-0 text-white fs-30">
                                     0
                                 </h3>
                             </div>
-                            <div class="col-auto text-right">
+                            <div className="col-auto text-right">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"
                                     viewBox="0 0 64 64">
                                     <g id="Group_25" data-name="Group 25"
@@ -91,12 +91,12 @@ function Dashbord (){
                                             transform="translate(1367.615 -1116)" fill="#FFFFFF" />
                                         <line id="Line_1" data-name="Line 1"
                                             transform="translate(1578.047 -1014.618)" fill="none"
-                                            stroke="red" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="0.142" />
+                                            stroke="red" strokeLinecap="round" strokeLinejoin="round"
+                                            strokeWidth="0.142" />
                                         <line id="Line_2" data-name="Line 2"
                                             transform="translate(1609.643 -1014.618)" fill="none"
-                                            stroke="red" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="0.142" />
+                                            stroke="red" strokeLinecap="round" strokeLinejoin="round"
+                                            strokeWidth="0.142" />
                                         <path id="Path_61" data-name="Path 61"
                                             d="M213.73,123.882h24a1,1,0,0,1,0,2h-24a1,1,0,0,1,0-2"
                                             transform="translate(1372.115 -1109.5)" fill="#FFFFFF" />
@@ -111,12 +111,12 @@ function Dashbord (){
                                             transform="translate(1367.615 -1104)" fill="#FFFFFF" />
                                         <line id="Line_3" data-name="Line 3"
                                             transform="translate(1609.643 -1015.618)" fill="none"
-                                            stroke="red" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="0.142" />
+                                            stroke="red" strokeLinecap="round" strokeLinejoin="round"
+                                            strokeWidth="0.142" />
                                         <line id="Line_4" data-name="Line 4"
                                             transform="translate(1578.047 -1015.618)" fill="none"
-                                            stroke="red" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="0.142" />
+                                            stroke="red" strokeLinecap="round" strokeLinejoin="round"
+                                            strokeWidth="0.142" />
                                         <path id="Path_65" data-name="Path 65"
                                             d="M265.23,116.382a8,8,0,0,0-8-8h-7.2a1,1,0,0,0,0,2h7.2a6,6,0,0,1,6,6v44a6,6,0,0,1-6,6h-48a6,6,0,0,1-6-6v-44a6,6,0,0,1,6-6h7.2a1,1,0,0,0,0-2h-7.2a8,8,0,0,0-8,8v44a8,8,0,0,0,8,8h48a8,8,0,0,0,8-8Z"
                                             transform="translate(1360.615 -1125)" fill="#FFFFFF" />
@@ -127,36 +127,36 @@ function Dashbord (){
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-6 col-xxl-3">
-                <div class="card shadow-none mb-4 bg-primary py-4">
-                    <div class="card-body">
-                        <div class="row align-items-center">
-                            <div class="col">
-                                <p class="small text-muted mb-0">
-                                    <span class="fe fe-arrow-down fe-12"></span>
-                                    <span class="fs-14 text-light">Total Sales</span>
+            <div className="col-sm-6 col-md-6 col-xxl-3">
+                <div className="card shadow-none mb-4 bg-primary py-4">
+                    <div className="card-body">
+                        <div className="row align-items-center">
+                            <div className="col">
+                                <p className="small text-muted mb-0">
+                                    <span className="fe fe-arrow-down fe-12"></span>
+                                    <span className="fs-14 text-light">Total Sales</span>
                                 </p>
-                                <h3 class="mb-0 text-white fs-30">
+                                <h3 className="mb-0 text-white fs-30">
                                     ZK0.00
                                 </h3>
 
                             </div>
-                            <div class="col-auto text-right">
+                            <div className="col-auto text-right">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64.001"
                                     viewBox="0 0 64 64.001">
                                     <g id="Group_26" data-name="Group 26"
                                         transform="translate(-1571.385 1123.29)">
                                         <line id="Line_5" data-name="Line 5"
                                             transform="translate(1572.385 -1123.29)" fill="none"
-                                            stroke="red" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="0.142" />
+                                            stroke="red" strokeLinecap="round" strokeLinejoin="round"
+                                            strokeWidth="0.142" />
                                         <path id="Path_67" data-name="Path 67"
                                             d="M214.771,65.71a2,2,0,0,1-2-2v-59a1,1,0,0,0-2,0v59a4,4,0,0,0,4,4h59a1,1,0,0,0,0-2Z"
                                             transform="translate(1360.615 -1127)" fill="#FFFFFF" />
                                         <line id="Line_6" data-name="Line 6" y1="0.136" x2="0.136"
                                             transform="translate(1586.533 -1087.117)" fill="none"
-                                            stroke="red" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="0.142" />
+                                            stroke="red" strokeLinecap="round" strokeLinejoin="round"
+                                            strokeWidth="0.142" />
                                         <path id="Path_68" data-name="Path 68"
                                             d="M264.6,10.027a3,3,0,0,0-4,4L247.536,27.1a2.994,2.994,0,0,0-2.594,0l-6.584-6.584a3,3,0,1,0-5.414,0L221.528,31.927a3,3,0,1,0,1.412,1.418l11.418-11.418a3,3,0,0,0,2.586,0l6.586,6.586a3,3,0,1,0,5.418,0l13.072-13.07a3,3,0,0,0,2.584-5.416M220.23,35.633a1,1,0,1,1,1-1,1,1,0,0,1-1,1m15.42-15.414a1,1,0,1,1,1-1,1,1,0,0,1-1,1M246.238,30.8a1,1,0,1,1,1-1,1,1,0,0,1-1,1m17.074-17.066a1,1,0,1,1,1-1,1,1,0,0,1-1,1"
                                             transform="translate(1367.074 -1120.976)" fill="#FFFFFF" />
@@ -169,45 +169,45 @@ function Dashbord (){
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-3 mb-4">
-                <div class="card shadow-none bg-soft-primary">
-                    <div class="card-body">
-                        <div class="card-title text-primary fs-16 fw-600">
+        <div className="row">
+            <div className="col-sm-6 col-md-6 col-lg-3 mb-4">
+                <div className="card shadow-none bg-soft-primary">
+                    <div className="card-body">
+                        <div className="card-title text-primary fs-16 fw-600">
                             Sales Stat
                         </div>
-                        <canvas id="graph-1" class="w-100" height="150"></canvas>
+                        <canvas id="graph-1" className="w-100" height="150"></canvas>
                     </div>
                 </div>
-                <div class="card shadow-none bg-soft-primary mb-0">
+                <div className="card shadow-none bg-soft-primary mb-0">
 
 
-                    <div class="card-body">
-                        <div class="card-title text-primary fs-16 fw-600">
+                    <div className="card-body">
+                        <div className="card-title text-primary fs-16 fw-600">
                             Sold Amount
                         </div>
                         <p>Your sold amount (current month)</p>
-                        <h3 class="text-primary fw-600 fs-30">
+                        <h3 className="text-primary fw-600 fs-30">
                             ZK0.00
                         </h3>
-                        <p class="mt-4">
+                        <p className="mt-4">
                             Last Month: ZK0.00
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-3 mb-4">
-                <div class="card shadow-none h-450px mb-0 h-100">
-                    <div class="card-body">
-                        <div class="card-title text-primary fs-16 fw-600">
+            <div className="col-sm-6 col-md-6 col-lg-3 mb-4">
+                <div className="card shadow-none h-450px mb-0 h-100">
+                    <div className="card-body">
+                        <div className="card-title text-primary fs-16 fw-600">
                             Category wise product count
                         </div>
                         <hr></hr>
-                            <ul class="list-group">
+                            <ul className="list-group">
                                 <li
-                                    class="d-flex justify-content-between align-items-center my-2 text-primary fs-13">
+                                    className="d-flex justify-content-between align-items-center my-2 text-primary fs-13">
                                     Straight Fertilizer
-                                    <span class="">
+                                    <span className="">
                                         3
                                     </span>
                                 </li>
@@ -215,17 +215,17 @@ function Dashbord (){
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-3 mb-4">
-                <div class="card h-450px mb-0 h-100">
-                    <div class="card-body">
-                        <div class="card-title text-primary fs-16 fw-600">
+            <div className="col-sm-6 col-md-6 col-lg-3 mb-4">
+                <div className="card h-450px mb-0 h-100">
+                    <div className="card-body">
+                        <div className="card-title text-primary fs-16 fw-600">
                             Orders
-                            <p class="small text-muted mb-0">
-                                <span class="fs-12 fw-600">This Month</span>
+                            <p className="small text-muted mb-0">
+                                <span className="fs-12 fw-600">This Month</span>
                             </p>
                         </div>
-                        <div class="row align-items-center mb-4">
-                            <div class="col-auto text-left">
+                        <div className="row align-items-center mb-4">
+                            <div className="col-auto text-left">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                                     viewBox="0 0 30 30">
                                     <g id="Group_23742" data-name="Group 23742"
@@ -244,18 +244,18 @@ function Dashbord (){
                                     </g>
                                 </svg>
                             </div>
-                            <div class="col">
-                                <p class="small text-muted mb-0">
-                                    <span class="fe fe-arrow-down fe-12"></span>
-                                    <span class="fs-13 text-primary fw-600">New Order</span>
+                            <div className="col">
+                                <p className="small text-muted mb-0">
+                                    <span className="fe fe-arrow-down fe-12"></span>
+                                    <span className="fs-13 text-primary fw-600">New Order</span>
                                 </p>
-                                <h3 class="mb-0" >
+                                <h3 className="mb-0" >
                                     2
                                 </h3>
                             </div>
                         </div>
-                        <div class="row align-items-center mb-4">
-                            <div class="col-auto text-left">
+                        <div className="row align-items-center mb-4">
+                            <div className="col-auto text-left">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     xmlnsXlink="http://www.w3.org/1999/xlink" width="30" height="30"
                                     viewBox="0 0 30 30">
@@ -269,7 +269,7 @@ function Dashbord (){
                                     <g id="Group_23751" data-name="Group 23751"
                                         transform="translate(0 0.001)">
                                         <g id="Group_23750" data-name="Group 23750"
-                                            transform="translate(0 -0.001)" clip-path="url(#clip-path)">
+                                            transform="translate(0 -0.001)" clipPath="url(#clip-path)">
                                             <path id="Path_27505" data-name="Path 27505"
                                                 d="M13.122,30H7.03A7.041,7.041,0,0,1,0,22.959V7.03A7.041,7.041,0,0,1,7.03,0H22.959A7.041,7.041,0,0,1,30,7.03v5.857a1.172,1.172,0,1,1-2.343,0V7.03a4.691,4.691,0,0,0-4.7-4.687H7.03A4.691,4.691,0,0,0,2.343,7.03V22.959A4.691,4.691,0,0,0,7.03,27.646h6.092a1.177,1.177,0,0,1,0,2.354"
                                                 transform="translate(0 0)" fill="#2E294E" />
@@ -286,18 +286,18 @@ function Dashbord (){
                                     </g>
                                 </svg>
                             </div>
-                            <div class="col">
-                                <p class="small text-muted mb-0">
-                                    <span class="fe fe-arrow-down fe-12"></span>
-                                    <span class="fs-13 text-primary fw-600">Cancelled</span>
+                            <div className="col">
+                                <p className="small text-muted mb-0">
+                                    <span className="fe fe-arrow-down fe-12"></span>
+                                    <span className="fs-13 text-primary fw-600">Cancelled</span>
                                 </p>
-                                <h3 class="mb-0" >
+                                <h3 className="mb-0" >
                                     0
                                 </h3>
                             </div>
                         </div>
-                        <div class="row align-items-center mb-4">
-                            <div class="col-auto text-left">
+                        <div className="row align-items-center mb-4">
+                            <div className="col-auto text-left">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                                     viewBox="0 0 30 30">
                                     <g id="Group_23745" data-name="Group 23745"
@@ -331,18 +331,18 @@ function Dashbord (){
                                     </g>
                                 </svg>
                             </div>
-                            <div class="col">
-                                <p class="small text-muted mb-0">
-                                    <span class="fe fe-arrow-down fe-12"></span>
-                                    <span class="fs-13 text-primary fw-600">On delivery</span>
+                            <div className="col">
+                                <p className="small text-muted mb-0">
+                                    <span className="fe fe-arrow-down fe-12"></span>
+                                    <span className="fs-13 text-primary fw-600">On delivery</span>
                                 </p>
-                                <h3 class="mb-0" >
+                                <h3 className="mb-0" >
                                     0
                                 </h3>
                             </div>
                         </div>
-                        <div class="row align-items-center mb-4">
-                            <div class="col-auto text-left">
+                        <div className="row align-items-center mb-4">
+                            <div className="col-auto text-left">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                                     viewBox="0 0 30 30">
                                     <g id="Group_23747" data-name="Group 23747"
@@ -364,12 +364,12 @@ function Dashbord (){
                                     </g>
                                 </svg>
                             </div>
-                            <div class="col">
-                                <p class="small text-muted mb-0">
-                                    <span class="fe fe-arrow-down fe-12"></span>
-                                    <span class="fs-13 text-primary fw-600">Delivered</span>
+                            <div className="col">
+                                <p className="small text-muted mb-0">
+                                    <span className="fe fe-arrow-down fe-12"></span>
+                                    <span className="fs-13 text-primary fw-600">Delivered</span>
                                 </p>
-                                <h3 class="mb-0" >
+                                <h3 className="mb-0" >
                                     0
                                 </h3>
                             </div>
@@ -378,53 +378,53 @@ function Dashbord (){
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-3 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-title">
-                            <h6 class="mb-0">Purchased Package</h6>
+            <div className="col-sm-6 col-md-6 col-lg-3 mb-4">
+                <div className="card">
+                    <div className="card-body">
+                        <div className="card-title">
+                            <h6 className="mb-0">Purchased Package</h6>
                         </div>
-                        <div class="d-flex">
-                            <div class="col-3">
+                        <div className="d-flex">
+                            <div className="col-3">
                                 <img src="https://mmslfashions.in/public/uploads/all/qWtVvdVrkexRR41VVaNV6W7yzjMGUVrD3HqfnYNA.png"
-                                    class="img-fluid mb-4 w-64px"/>
+                                    className="img-fluid mb-4 w-64px"/>
                             </div>
-                            <div class="col-9">
-                                <a class="fw-600 mb-3 text-primary">Current Package:</a>
-                                <h6 class="text-primary">
+                            <div className="col-9">
+                                <a className="fw-600 mb-3 text-primary">Current Package:</a>
+                                <h6 className="text-primary">
                                     Gold
                                 </h6>
-                                <p class="mb-1 text-muted">Product Upload Limit:
+                                <p className="mb-1 text-muted">Product Upload Limit:
                                     30 Times
                                 </p>
-                                <p class="text-muted mb-4">Package Expires at:
+                                <p className="text-muted mb-4">Package Expires at:
                                     2023-05-24
                                 </p>
-                                <div class="">
+                                <div className="">
                                     <a href="https://mmslfashions.in/seller/seller-packages"
-                                        class="btn btn-soft-primary">Upgrade Package</a>
+                                        className="btn btn-soft-primary">Upgrade Package</a>
                                 </div>
                             </div>
                         </div>
 
                     </div>
                 </div>
-                <div class="card mb-0  px-4 py-5  d-flex align-items-center justify-content-center">
-                    <div class="my-2 py-1">
+                <div className="card mb-0  px-4 py-5  d-flex align-items-center justify-content-center">
+                    <div className="my-2 py-1">
                         <img src="https://mmslfashions.in/public/assets/img/verified.png" alt="" width="" />
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-3">
+        <div className="row">
+            <div className="col-sm-6 col-md-6 col-lg-3">
                 <a href="https://mmslfashions.in/seller/money-withdraw-requests"
-                    class="card mb-4 p-4 text-center bg-soft-primary h-180px">
-                    <div class="fs-16 fw-600 text-primary">
+                    className="card mb-4 p-4 text-center bg-soft-primary h-180px">
+                    <div className="fs-16 fw-600 text-primary">
                         Money Withdraw
                     </div>
-                    <div class="m-3">
+                    <div className="m-3">
                         <svg id="Group_22725" data-name="Group 22725" xmlns="http://www.w3.org/2000/svg"
                             width="48" height="48" viewBox="0 0 48 48">
                             <path id="Path_108"
@@ -441,12 +441,12 @@ function Dashbord (){
                     </div>
                 </a>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-3">
-                <a href="https://mmslfashions.in/seller/products" class="card mb-4 p-4 text-center h-180px">
-                    <div class="fs-16 fw-600 text-primary">
+            <div className="col-sm-6 col-md-6 col-lg-3">
+                <a href="https://mmslfashions.in/seller/products" className="card mb-4 p-4 text-center h-180px">
+                    <div className="fs-16 fw-600 text-primary">
                         Add New Product
                     </div>
-                    <div class="m-3">
+                    <div className="m-3">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
                             <g id="Group_22724" data-name="Group 22724" transform="translate(-1284 -875)">
                                 <rect id="Rectangle_17080" data-name="Rectangle 17080" width="2" height="48"
@@ -458,12 +458,12 @@ function Dashbord (){
                     </div>
                 </a>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-3">
-                <div class="card mb-4 p-4 text-center bg-soft-primary">
-                    <div class="fs-16 fw-600 text-primary">
+            <div className="col-sm-6 col-md-6 col-lg-3">
+                <div className="card mb-4 p-4 text-center bg-soft-primary">
+                    <div className="fs-16 fw-600 text-primary">
                         Shop Settings
                     </div>
-                    <div class=" m-3">
+                    <div className=" m-3">
                         <svg id="Group_31" data-name="Group 31" xmlns="http://www.w3.org/2000/svg"
                             width="32" height="32" viewBox="0 0 32 32">
                             <path id="Path_78" data-name="Path 78"
@@ -482,17 +482,17 @@ function Dashbord (){
                                 fill="#2E294E" />
                         </svg>
                     </div>
-                    <a href="https://mmslfashions.in/seller/shop" class="btn btn-primary">
+                    <a href="https://mmslfashions.in/seller/shop" className="btn btn-primary">
                         Go to setting
                     </a>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-3">
-                <div class="card mb-4 p-4 text-center bg-soft-primary">
-                    <div class="fs-16 fw-600 text-primary">
+            <div className="col-sm-6 col-md-6 col-lg-3">
+                <div className="card mb-4 p-4 text-center bg-soft-primary">
+                    <div className="fs-16 fw-600 text-primary">
                         Payment Settings
                     </div>
-                    <div class=" m-3">
+                    <div className=" m-3">
                         <svg id="Group_30" data-name="Group 30" xmlns="http://www.w3.org/2000/svg"
                             width="31.999" height="32" viewBox="0 0 31.999 32">
                             <path id="Path_83" data-name="Path 83"
@@ -509,102 +509,102 @@ function Dashbord (){
                                 transform="translate(-92.946 -10)" fill="#2E294E" />
                         </svg>
                     </div>
-                    <a href="https://mmslfashions.in/seller/profile" class="btn btn-primary">
+                    <a href="https://mmslfashions.in/seller/profile" className="btn btn-primary">
                         Configure Now
                     </a>
                 </div>
             </div>
         </div>
 
-        <div class="card">
-            <div class="card-body">
-                <div class="card-title text-primary">
-                    <h6 class="mb-0">Top 12 Products</h6>
+        <div className="card">
+            <div className="card-body">
+                <div className="card-title text-primary">
+                    <h6 className="mb-0">Top 12 Products</h6>
                 </div>
-                <div class="aiz-carousel gutters-10 half-outside-arrow" data-items="6" data-xl-items="5"
+                <div className="aiz-carousel gutters-10 half-outside-arrow" data-items="6" data-xl-items="5"
                     data-lg-items="4" data-md-items="3" data-sm-items="2" data-arrows='true'>
-                    <div class="carousel-box">
+                    <div className="carousel-box">
                         <div
-                            class="aiz-card-box border border-light rounded shadow-sm hov-shadow-md mb-2 has-transition bg-white">
-                            <div class="position-relative">
-                                <a href="https://mmslfashions.in/product/ntrat-alamonyom" class="d-block">
-                                    <img class="img-fit lazyload mx-auto h-210px"
+                            className="aiz-card-box border border-light rounded shadow-sm hov-shadow-md mb-2 has-transition bg-white">
+                            <div className="position-relative">
+                                <a href="https://mmslfashions.in/product/ntrat-alamonyom" className="d-block">
+                                    <img className="img-fit lazyload mx-auto h-210px"
                                         src="https://mmslfashions.in/public/assets/img/placeholder.jpg"
                                         data-src="https://mmslfashions.in/public/uploads/all/g7ZiaWNvwkLwNhl67jtfbUaIcwSzVarNuc7T8dLP.jpg"
                                         alt="Ammonium Nitrate"
-                                        onerror="this.onerror=null;this.src='https://mmslfashions.in/public/assets/img/placeholder.jpg';" />
+                                         />
                                 </a>
                             </div>
-                            <div class="p-md-3 p-2 text-left">
-                                <div class="fs-15">
-                                    <span class="fw-700 text-primary">ZK350.00</span>
+                            <div className="p-md-3 p-2 text-left">
+                                <div className="fs-15">
+                                    <span className="fw-700 text-primary">ZK350.00</span>
                                 </div>
-                                <div class="rating rating-sm mt-1">
-                                    <i class='las la-star'></i><i class='las la-star'></i><i
-                                        class='las la-star'></i><i class='las la-star'></i><i
-                                            class='las la-star'></i>
+                                <div className="rating rating-sm mt-1">
+                                    <i className='las la-star'></i><i className='las la-star'></i><i
+                                        className='las la-star'></i><i className='las la-star'></i><i
+                                            className='las la-star'></i>
                                 </div>
-                                <h3 class="fw-600 fs-13 text-truncate-2 lh-1-4 mb-0">
+                                <h3 className="fw-600 fs-13 text-truncate-2 lh-1-4 mb-0">
                                     <a href="https://mmslfashions.in/product/ntrat-alamonyom"
-                                        class="d-block text-reset">Ammonium Nitrate</a>
+                                        className="d-block text-reset">Ammonium Nitrate</a>
                                 </h3>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-box">
+                    <div className="carousel-box">
                         <div
-                            class="aiz-card-box border border-light rounded shadow-sm hov-shadow-md mb-2 has-transition bg-white">
-                            <div class="position-relative">
+                            className="aiz-card-box border border-light rounded shadow-sm hov-shadow-md mb-2 has-transition bg-white">
+                            <div className="position-relative">
                                 <a href="https://mmslfashions.in/product/ammonium-sulphate-3"
-                                    class="d-block">
-                                    <img class="img-fit lazyload mx-auto h-210px"
+                                    className="d-block">
+                                    <img className="img-fit lazyload mx-auto h-210px"
                                         src="https://mmslfashions.in/public/assets/img/placeholder.jpg"
                                         data-src="https://mmslfashions.in/public/uploads/all/yVOr0O2yV6y4EcW47YAkrl2w77aQG5yXYGYLcZFD.png"
                                         alt="Ammonium Sulphate"
-                                        onerror="this.onerror=null;this.src='https://mmslfashions.in/public/assets/img/placeholder.jpg';" />
+                                         />
                                 </a>
                             </div>
-                            <div class="p-md-3 p-2 text-left">
-                                <div class="fs-15">
-                                    <span class="fw-700 text-primary">ZK220.00</span>
+                            <div className="p-md-3 p-2 text-left">
+                                <div className="fs-15">
+                                    <span className="fw-700 text-primary">ZK220.00</span>
                                 </div>
-                                <div class="rating rating-sm mt-1">
-                                    <i class='las la-star'></i><i class='las la-star'></i><i
-                                        class='las la-star'></i><i class='las la-star'></i><i
-                                            class='las la-star'></i>
+                                <div className="rating rating-sm mt-1">
+                                    <i className='las la-star'></i><i className='las la-star'></i><i
+                                        className='las la-star'></i><i className='las la-star'></i><i
+                                            className='las la-star'></i>
                                 </div>
-                                <h3 class="fw-600 fs-13 text-truncate-2 lh-1-4 mb-0">
+                                <h3 className="fw-600 fs-13 text-truncate-2 lh-1-4 mb-0">
                                     <a href="https://mmslfashions.in/product/ammonium-sulphate-3"
-                                        class="d-block text-reset">Ammonium Sulphate</a>
+                                        className="d-block text-reset">Ammonium Sulphate</a>
                                 </h3>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-box">
+                    <div className="carousel-box">
                         <div
-                            class="aiz-card-box border border-light rounded shadow-sm hov-shadow-md mb-2 has-transition bg-white">
-                            <div class="position-relative">
+                            className="aiz-card-box border border-light rounded shadow-sm hov-shadow-md mb-2 has-transition bg-white">
+                            <div className="position-relative">
                                 <a href="https://mmslfashions.in/product/ammonium-sulphate-xlnf4"
-                                    class="d-block">
-                                    <img class="img-fit lazyload mx-auto h-210px"
+                                    className="d-block">
+                                    <img className="img-fit lazyload mx-auto h-210px"
                                         src="https://mmslfashions.in/public/assets/img/placeholder.jpg"
                                         data-src="https://mmslfashions.in/public/uploads/all/Wiv7vhbeLmejHSA4L7NNWgfAqundcpdd76tW7OiY.jpg"
                                         alt="Ammonium Sulphate"
-                                        onerror="this.onerror=null;this.src='https://mmslfashions.in/public/assets/img/placeholder.jpg';" />
+                                         />
                                 </a>
                             </div>
-                            <div class="p-md-3 p-2 text-left">
-                                <div class="fs-15">
-                                    <span class="fw-700 text-primary">ZK220.00</span>
+                            <div className="p-md-3 p-2 text-left">
+                                <div className="fs-15">
+                                    <span className="fw-700 text-primary">ZK220.00</span>
                                 </div>
-                                <div class="rating rating-sm mt-1">
-                                    <i class='las la-star'></i><i class='las la-star'></i><i
-                                        class='las la-star'></i><i class='las la-star'></i><i
-                                            class='las la-star'></i>
+                                <div className="rating rating-sm mt-1">
+                                    <i className='las la-star'></i><i className='las la-star'></i><i
+                                        className='las la-star'></i><i className='las la-star'></i><i
+                                            className='las la-star'></i>
                                 </div>
-                                <h3 class="fw-600 fs-13 text-truncate-2 lh-1-4 mb-0">
+                                <h3 className="fw-600 fs-13 text-truncate-2 lh-1-4 mb-0">
                                     <a href="https://mmslfashions.in/product/ammonium-sulphate-xlnf4"
-                                        class="d-block text-reset">Ammonium Sulphate</a>
+                                        className="d-block text-reset">Ammonium Sulphate</a>
                                 </h3>
                             </div>
                         </div>
@@ -614,8 +614,8 @@ function Dashbord (){
         </div>
 
     </div>
-    <div class="bg-white text-center py-3 px-15px px-lg-25px mt-auto border-sm-top">
-        <p class="mb-0">&copy; v6.3.3</p>
+    <div className="bg-white text-center py-3 px-15px px-lg-25px mt-auto border-sm-top">
+        <p className="mb-0">&copy; v6.3.3</p>
     </div>
     </>
 
