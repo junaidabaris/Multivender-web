@@ -19,6 +19,7 @@ import ProductsPage from './pages/products';
 import MainVender from './venderFile/vender-page/mainPage';
 import { useState } from 'react';
 import Dashbord from './venderFile/vender-page/dashbord';
+import VendorBannersPage from './venderFile/vender-page/venderBanner/Index';
 function App() {
   const [show, setshow] = useState(true)
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path='/product-detail' element={<ProductDetailPage />} />
         <Route path='/venderLogin' element={<MainVender setshow={setshow} />}>
           <Route path='' element={<Dashbord/>}/>
+          <Route path='banners' element={<VendorBannersPage/>}/> 
         </Route>
       </Routes>
       {show && <Footer />}

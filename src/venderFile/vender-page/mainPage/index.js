@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { Outlet } from "react-router-dom"
+import { Link, Outlet } from "react-router-dom"
 
 function MainVender({ setshow }) {
 
@@ -66,10 +66,10 @@ function MainVender({ setshow }) {
                             </li>
 
                             <li class="aiz-side-nav-item">
-                                <a href="https://mmslfashions.in/seller/banners" class="aiz-side-nav-link ">
+                                <Link to="banners" class="aiz-side-nav-link ">
                                     <i class="las la-folder-open aiz-side-nav-icon"></i>
                                     <span class="aiz-side-nav-text">Banners</span>
-                                </a>
+                                </Link>
                             </li>
 
 
@@ -330,7 +330,7 @@ function MainVender({ setshow }) {
                                         <span class="d-flex align-items-center">
                                             <span class="avatar avatar-sm mr-md-2">
                                                 <img src="https://mmslfashions.in/public/uploads/all/J3IHQMPrIal220S890WP4kxP1shTCJytvopboZrL.png"
-                                                    onerror="this.onerror=null;this.src='https://mmslfashions.in/public/assets/img/avatar-place.png';"/>
+                                                    onError="this.onError=null;this.src='https://mmslfashions.in/public/assets/img/avatar-place.png';"/>
                                             </span>
                                             <span class="d-none d-md-block">
                                                 <span class="d-block fw-500">Abaris Seller</span>
