@@ -1,6 +1,15 @@
 import Header from './common/header/Header';
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./assets/css/media.css";
 import "./assets/css/style.css";
+
+
+import "./venderFile/css/vendors.css"
+import "./venderFile/css/stylesheets.css"
+import "./venderFile/css/aiz-core.css"
+import "./venderFile/css/custom-style.css"
+
+
 import { Navigate, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/home';
 import PageNotFoundPage from './pages/page-not-found';
@@ -9,6 +18,7 @@ import Footer from './common/footer/Footer';
 import ProductsPage from './pages/products';
 import MainVender from './venderFile/vender-page/mainPage';
 import { useState } from 'react';
+import Dashbord from './venderFile/vender-page/dashbord';
 function App() {
   const [show, setshow] = useState(true)
   return (
@@ -21,7 +31,9 @@ function App() {
         <Route path='page-not-found' element={<PageNotFoundPage />} />
         <Route path='/products' element={<ProductsPage />} />
         <Route path='/product-detail' element={<ProductDetailPage />} />
-        <Route path='/venderLogin' element={<MainVender setshow={setshow} />} />
+        <Route path='/venderLogin' element={<MainVender setshow={setshow} />}>
+          <Route path='' element={<Dashbord/>}/>
+        </Route>
       </Routes>
       {show && <Footer />}
     </>

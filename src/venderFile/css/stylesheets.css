@@ -3732,3 +3732,6 @@ div.phpdebugbar-widgets-mails li.phpdebugbar-widgets-list-item pre.phpdebugbar-w
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
+
+
+.bg-primary {background-color: #2e294e !important;}
