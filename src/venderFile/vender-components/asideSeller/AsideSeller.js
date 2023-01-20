@@ -1,7 +1,7 @@
 
 
 import { useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 
 function AsideSeller() {
     const [state, setState] = useState(false)
@@ -27,10 +27,10 @@ function AsideSeller() {
                 </ul>
                 <ul className="aiz-side-nav-list" id="main-menu" data-toggle="aiz-side-menu">
                     <li className="aiz-side-nav-item">
-                        <a href="https://mmslfashions.in/seller/dashboard" className="aiz-side-nav-link">
+                        <Link to="/seller" className="aiz-side-nav-link">
                             <i className="las la-home aiz-side-nav-icon"></i>
                             <span className="aiz-side-nav-text">Dashboard</span>
-                        </a>
+                        </Link>
                     </li>
                     <li className="aiz-side-nav-item">
                         <a href="#" className="aiz-side-nav-link" onClick={() => { setState(!state) }} >
@@ -40,21 +40,21 @@ function AsideSeller() {
                         </a>
                         <ul className={`aiz-side-nav-list level-2 mm-collapse ${state ? "mm-show" : "extra"}`} id="product">
                             <li className="aiz-side-nav-item">
-                                <Link to="sellerProducts" className="aiz-side-nav-link ">
+                                <NavLink to="sellerProducts" className="aiz-side-nav-link ">
                                     <span className="aiz-side-nav-text">Products</span>
-                                </Link>
+                                </NavLink>
                             </li>
 
                             <li className="aiz-side-nav-item">
-                                <Link to="product-bulk-upload"
+                                <NavLink to="product-bulk-upload"
                                     className="aiz-side-nav-link ">
                                     <span className="aiz-side-nav-text">Product Bulk Upload</span>
-                                </Link>
+                                </NavLink>
                             </li>
                             <li className="aiz-side-nav-item">
-                                <a href="https://mmslfashions.in/seller/digitalproducts" className="aiz-side-nav-link ">
+                                <NavLink to="digitalproducts" className="aiz-side-nav-link ">
                                     <span className="aiz-side-nav-text">Digital Products</span>
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="aiz-side-nav-item">
                                 <a href="https://mmslfashions.in/seller/reviews" className="aiz-side-nav-link ">
@@ -64,11 +64,11 @@ function AsideSeller() {
                         </ul>
                     </li>
 
-                <li class="aiz-side-nav-item">
-                    <Link to="banners" class="aiz-side-nav-link ">
-                        <i class="las la-folder-open aiz-side-nav-icon"></i>
-                        <span class="aiz-side-nav-text">Banners</span>
-                    </Link>
+                <li className="aiz-side-nav-item">
+                    <NavLink to="banners" className="aiz-side-nav-link ">
+                        <i className="las la-folder-open aiz-side-nav-icon"></i>
+                        <span className="aiz-side-nav-text">Banners</span>
+                    </NavLink>
                 </li>
 
 
@@ -112,22 +112,22 @@ function AsideSeller() {
                         </a>
                     </li>
 
-                <li class="aiz-side-nav-item">
-                    <a href="https://mmslfashions.in/seller/pos" class="aiz-side-nav-link ">
-                        <i class="las la-fax aiz-side-nav-icon"></i>
-                        <span class="aiz-side-nav-text">POS Manager</span>
+                <li className="aiz-side-nav-item">
+                    <a href="https://mmslfashions.in/seller/pos" className="aiz-side-nav-link ">
+                        <i className="las la-fax aiz-side-nav-icon"></i>
+                        <span className="aiz-side-nav-text">POS Manager</span>
                     </a>
                 </li>
-                <li class="aiz-side-nav-item">
-                    <Link to="orders" class="aiz-side-nav-link ">
-                        <i class="las la-money-bill aiz-side-nav-icon"></i>
-                        <span class="aiz-side-nav-text">Orders</span>
+                <li className="aiz-side-nav-item">
+                    <Link to="orders" className="aiz-side-nav-link ">
+                        <i className="las la-money-bill aiz-side-nav-icon"></i>
+                        <span className="aiz-side-nav-text">Orders</span>
                     </Link>
                 </li>
-                <li class="aiz-side-nav-item">
-                    <a href="https://mmslfashions.in/refund-request" class="aiz-side-nav-link ">
-                        <i class="las la-backward aiz-side-nav-icon"></i>
-                        <span class="aiz-side-nav-text">Received Refund Request</span>
+                <li className="aiz-side-nav-item">
+                    <a href="https://mmslfashions.in/refund-request" className="aiz-side-nav-link ">
+                        <i className="las la-backward aiz-side-nav-icon"></i>
+                        <span className="aiz-side-nav-text">Received Refund Request</span>
                     </a>
                 </li>
 
@@ -139,10 +139,10 @@ function AsideSeller() {
                         </a>
                     </li>
 
-                <li class="aiz-side-nav-item">
-                    <Link to="payments" class="aiz-side-nav-link ">
-                        <i class="las la-history aiz-side-nav-icon"></i>
-                        <span class="aiz-side-nav-text">Payment History</span>
+                <li className="aiz-side-nav-item">
+                    <Link to="payments" className="aiz-side-nav-link ">
+                        <i className="las la-history aiz-side-nav-icon"></i>
+                        <span className="aiz-side-nav-text">Payment History</span>
                     </Link>
                 </li>
 
