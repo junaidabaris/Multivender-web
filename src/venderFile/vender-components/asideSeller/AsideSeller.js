@@ -1,3 +1,5 @@
+
+
 import { useState } from "react"
 import { Link } from "react-router-dom"
 
@@ -62,12 +64,12 @@ function AsideSeller() {
                         </ul>
                     </li>
 
-                    <li className="aiz-side-nav-item">
-                        <a href="https://mmslfashions.in/seller/banners" className="aiz-side-nav-link ">
-                            <i className="las la-folder-open aiz-side-nav-icon"></i>
-                            <span className="aiz-side-nav-text">Banners</span>
-                        </a>
-                    </li>
+                <li class="aiz-side-nav-item">
+                    <Link to="banners" class="aiz-side-nav-link ">
+                        <i class="las la-folder-open aiz-side-nav-icon"></i>
+                        <span class="aiz-side-nav-text">Banners</span>
+                    </Link>
+                </li>
 
 
                     <li className="aiz-side-nav-item">
@@ -110,24 +112,24 @@ function AsideSeller() {
                         </a>
                     </li>
 
-                    <li className="aiz-side-nav-item">
-                        <a href="https://mmslfashions.in/seller/pos" className="aiz-side-nav-link ">
-                            <i className="las la-fax aiz-side-nav-icon"></i>
-                            <span className="aiz-side-nav-text">POS Manager</span>
-                        </a>
-                    </li>
-                    <li className="aiz-side-nav-item">
-                        <a href="https://mmslfashions.in/seller/orders" className="aiz-side-nav-link ">
-                            <i className="las la-money-bill aiz-side-nav-icon"></i>
-                            <span className="aiz-side-nav-text">Orders</span>
-                        </a>
-                    </li>
-                    <li className="aiz-side-nav-item">
-                        <a href="https://mmslfashions.in/refund-request" className="aiz-side-nav-link ">
-                            <i className="las la-backward aiz-side-nav-icon"></i>
-                            <span className="aiz-side-nav-text">Received Refund Request</span>
-                        </a>
-                    </li>
+                <li class="aiz-side-nav-item">
+                    <a href="https://mmslfashions.in/seller/pos" class="aiz-side-nav-link ">
+                        <i class="las la-fax aiz-side-nav-icon"></i>
+                        <span class="aiz-side-nav-text">POS Manager</span>
+                    </a>
+                </li>
+                <li class="aiz-side-nav-item">
+                    <Link to="orders" class="aiz-side-nav-link ">
+                        <i class="las la-money-bill aiz-side-nav-icon"></i>
+                        <span class="aiz-side-nav-text">Orders</span>
+                    </Link>
+                </li>
+                <li class="aiz-side-nav-item">
+                    <a href="https://mmslfashions.in/refund-request" class="aiz-side-nav-link ">
+                        <i class="las la-backward aiz-side-nav-icon"></i>
+                        <span class="aiz-side-nav-text">Received Refund Request</span>
+                    </a>
+                </li>
 
 
                     <li className="aiz-side-nav-item">
@@ -137,12 +139,12 @@ function AsideSeller() {
                         </a>
                     </li>
 
-                    <li className="aiz-side-nav-item">
-                        <a href="https://mmslfashions.in/seller/payments" className="aiz-side-nav-link ">
-                            <i className="las la-history aiz-side-nav-icon"></i>
-                            <span className="aiz-side-nav-text">Payment History</span>
-                        </a>
-                    </li>
+                <li class="aiz-side-nav-item">
+                    <Link to="payments" class="aiz-side-nav-link ">
+                        <i class="las la-history aiz-side-nav-icon"></i>
+                        <span class="aiz-side-nav-text">Payment History</span>
+                    </Link>
+                </li>
 
                     <li className="aiz-side-nav-item">
                         <a href="https://mmslfashions.in/seller/money-withdraw-requests" className="aiz-side-nav-link ">

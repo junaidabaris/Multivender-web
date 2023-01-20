@@ -19,6 +19,9 @@ import ProductsPage from './pages/products';
 import MainVender from './venderFile/vender-page/mainPage';
 import { useState } from 'react';
 import DashbordPage from './venderFile/vender-page/dashbord';
+import VendorBannersPage from './venderFile/vender-page/venderBanner/Index';
+import VenderOrderPage from './venderFile/vender-page/venderOrder/Index';
+import VenderPaymentHistory from './venderFile/vender-page/venderPaymentHistory/Index';
 import SellerProducts from './venderFile/vender-page/products/Index';
 import ProductBulkPage from './venderFile/vender-page/ProductBulk/Index';
 
@@ -36,6 +39,9 @@ function App() {
         <Route path='/product-detail' element={<ProductDetailPage />} />
         <Route path='/seller' element={<MainVender setshow={setshow} />}>
           <Route path='' element={<DashbordPage/>}/>
+          <Route path='banners' element={<VendorBannersPage/>}/> 
+          <Route path='orders' element={<VenderOrderPage/>}/> 
+          <Route path='payments' element={<VenderPaymentHistory/>}/> 
           <Route path='sellerProducts' element={<SellerProducts/>}/>
           <Route path='product-bulk-upload' element={<ProductBulkPage/>}/>
         </Route>
