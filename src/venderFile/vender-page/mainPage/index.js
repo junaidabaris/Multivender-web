@@ -9,9 +9,9 @@ function MainVender({ setshow }) {
         setshow(false)
     }, [])
     return <>
-        <div class="aiz-main-wrapper">
+        <div className="aiz-main-wrapper">
             <AsideSeller/>
-            <div class="aiz-content-wrapper">
+            <div className="aiz-content-wrapper">
                 <TopNavSeller/>
                 <Outlet></Outlet>
             </div>

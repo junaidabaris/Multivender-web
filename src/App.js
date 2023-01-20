@@ -23,6 +23,13 @@ import UploadedFilesPage from './venderFile/vender-page/UploadedFilesPage';
 import CouponsPage from './venderFile/vender-page/couponsPage';
 import RecievedRefundPage from './venderFile/vender-page/recievedRefundPage';
 import ShopSettingPage from './venderFile/vender-page/shopSettingPage';
+import VendorBannersPage from './venderFile/vender-page/venderBanner/Index';
+import VenderOrderPage from './venderFile/vender-page/venderOrder/Index';
+import VenderPaymentHistory from './venderFile/vender-page/venderPaymentHistory/Index';
+import SellerProducts from './venderFile/vender-page/products/Index';
+import ProductBulkPage from './venderFile/vender-page/ProductBulk/Index';
+import Digitalproducts from './venderFile/vender-page/digitalProduct';
+
 function App() {
   const [show, setshow] = useState(true)
   return (
@@ -37,10 +44,16 @@ function App() {
         <Route path='/product-detail' element={<ProductDetailPage />} />
         <Route path='/seller' element={<MainVender setshow={setshow} />}>
           <Route path='' element={<DashbordPage />} />
-          <Route path={'uploads'} element={<UploadedFilesPage />} />
-          <Route path={'coupon'} element={<CouponsPage />} />
-          <Route path={'refund-request'} element={<RecievedRefundPage />} />
-          <Route path={'shop'} element={<ShopSettingPage />} />
+          <Route path='uploads' element={<UploadedFilesPage />} />
+          <Route path='coupon' element={<CouponsPage />} />
+          <Route path='refund-request' element={<RecievedRefundPage />} />
+          <Route path='shop' element={<ShopSettingPage />} />
+          <Route path='banners' element={<VendorBannersPage />} />
+          <Route path='orders' element={<VenderOrderPage />} />
+          <Route path='payments' element={<VenderPaymentHistory />} />
+          <Route path='sellerProducts' element={<SellerProducts />} />
+          <Route path='product-bulk-upload' element={<ProductBulkPage />} />
+          <Route path='digitalproducts' element={<Digitalproducts />} />
         </Route>
       </Routes>
       {show && <Footer />}

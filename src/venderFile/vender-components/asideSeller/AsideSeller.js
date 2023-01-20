@@ -1,6 +1,12 @@
-import { NavLink } from "react-router-dom"
+
+
+import { useState } from "react"
+import { Link, NavLink } from "react-router-dom"
 
 function AsideSeller() {
+    const [state, setState] = useState(false)
+
+
     return <div className="aiz-sidebar-wrap">
         <div className="aiz-sidebar left c-scrollbar">
             <div className="aiz-side-nav-logo-wrap">
@@ -15,39 +21,40 @@ function AsideSeller() {
             <div className="aiz-side-nav-wrap">
                 <div className="px-20px mb-3">
                     <input className="form-control bg-soft-secondary border-0 form-control-sm text-white" type="text"
-                        name="" placeholder="Search in menu" id="menu-search" onkeyup="menuSearch()" />
+                        name="" placeholder="Search in menu" id="menu-search" />
                 </div>
                 <ul className="aiz-side-nav-list" id="search-menu">
                 </ul>
                 <ul className="aiz-side-nav-list" id="main-menu" data-toggle="aiz-side-menu">
                     <li className="aiz-side-nav-item">
-                        <a href="https://mmslfashions.in/seller/dashboard" className="aiz-side-nav-link">
+                        <Link to="/seller" className="aiz-side-nav-link">
                             <i className="las la-home aiz-side-nav-icon"></i>
                             <span className="aiz-side-nav-text">Dashboard</span>
-                        </a>
+                        </Link>
                     </li>
                     <li className="aiz-side-nav-item">
-                        <a href="#" className="aiz-side-nav-link" onclick="showList()">
+                        <a href="#" className="aiz-side-nav-link" onClick={() => { setState(!state) }} >
                             <i className="las la-shopping-cart aiz-side-nav-icon"></i>
                             <span className="aiz-side-nav-text">Products</span>
                             <span className="aiz-side-nav-arrow"></span>
                         </a>
-                        <ul className="aiz-side-nav-list level-2" id="product">
+                        <ul className={`aiz-side-nav-list level-2 mm-collapse ${state ? "mm-show" : "extra"}`} id="product">
                             <li className="aiz-side-nav-item">
-                                <a href="https://mmslfashions.in/seller/products" className="aiz-side-nav-link ">
+                                <NavLink to="sellerProducts" className="aiz-side-nav-link ">
                                     <span className="aiz-side-nav-text">Products</span>
-                                </a>
+                                </NavLink>
                             </li>
+
                             <li className="aiz-side-nav-item">
-                                <a href="https://mmslfashions.in/seller/product-bulk-upload/index"
+                                <NavLink to="product-bulk-upload"
                                     className="aiz-side-nav-link ">
                                     <span className="aiz-side-nav-text">Product Bulk Upload</span>
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="aiz-side-nav-item">
-                                <a href="https://mmslfashions.in/seller/digitalproducts" className="aiz-side-nav-link ">
+                                <NavLink to="digitalproducts" className="aiz-side-nav-link ">
                                     <span className="aiz-side-nav-text">Digital Products</span>
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="aiz-side-nav-item">
                                 <a href="https://mmslfashions.in/seller/reviews" className="aiz-side-nav-link ">
@@ -56,12 +63,15 @@ function AsideSeller() {
                             </li>
                         </ul>
                     </li>
+
                     <li className="aiz-side-nav-item">
-                        <a href="https://mmslfashions.in/seller/banners" className="aiz-side-nav-link ">
+                        <NavLink to="banners" className="aiz-side-nav-link ">
                             <i className="las la-folder-open aiz-side-nav-icon"></i>
                             <span className="aiz-side-nav-text">Banners</span>
-                        </a>
+                        </NavLink>
                     </li>
+
+
                     <li className="aiz-side-nav-item">
                         <NavLink to="uploads" className="aiz-side-nav-link ">
                             <i className="las la-folder-open aiz-side-nav-icon"></i>
@@ -101,6 +111,7 @@ function AsideSeller() {
                             <span className="aiz-side-nav-text">Wholesale Products</span>
                         </a>
                     </li>
+
                     <li className="aiz-side-nav-item">
                         <a href="https://mmslfashions.in/seller/pos" className="aiz-side-nav-link ">
                             <i className="las la-fax aiz-side-nav-icon"></i>
@@ -108,10 +119,10 @@ function AsideSeller() {
                         </a>
                     </li>
                     <li className="aiz-side-nav-item">
-                        <a href="https://mmslfashions.in/seller/orders" className="aiz-side-nav-link ">
+                        <Link to="orders" className="aiz-side-nav-link ">
                             <i className="las la-money-bill aiz-side-nav-icon"></i>
                             <span className="aiz-side-nav-text">Orders</span>
-                        </a>
+                        </Link>
                     </li>
                     <li className="aiz-side-nav-item">
                         <NavLink to="refund-request" className="aiz-side-nav-link ">
@@ -119,36 +130,43 @@ function AsideSeller() {
                             <span className="aiz-side-nav-text">Received Refund Request</span>
                         </NavLink>
                     </li>
+
+
                     <li className="aiz-side-nav-item">
                         <NavLink to="shop" className="aiz-side-nav-link ">
                             <i className="las la-cog aiz-side-nav-icon"></i>
                             <span className="aiz-side-nav-text">Shop Setting</span>
                         </NavLink>
                     </li>
+
                     <li className="aiz-side-nav-item">
-                        <a href="https://mmslfashions.in/seller/payments" className="aiz-side-nav-link ">
+                        <Link to="payments" className="aiz-side-nav-link ">
                             <i className="las la-history aiz-side-nav-icon"></i>
                             <span className="aiz-side-nav-text">Payment History</span>
-                        </a>
+                        </Link>
                     </li>
+
                     <li className="aiz-side-nav-item">
                         <a href="https://mmslfashions.in/seller/money-withdraw-requests" className="aiz-side-nav-link ">
                             <i className="las la-money-bill-wave-alt aiz-side-nav-icon"></i>
                             <span className="aiz-side-nav-text">Money Withdraw</span>
                         </a>
                     </li>
+
                     <li className="aiz-side-nav-item">
                         <a href="https://mmslfashions.in/seller/commission-history" className="aiz-side-nav-link">
                             <i className="las la-file-alt aiz-side-nav-icon"></i>
                             <span className="aiz-side-nav-text">Commission History</span>
                         </a>
                     </li>
+
                     <li className="aiz-side-nav-item">
                         <a href="https://mmslfashions.in/seller/conversations" className="aiz-side-nav-link ">
                             <i className="las la-comment aiz-side-nav-icon"></i>
                             <span className="aiz-side-nav-text">Conversations</span>
                         </a>
                     </li>
+
                     <li className="aiz-side-nav-item">
                         <a href="https://mmslfashions.in/seller/product-queries" className="aiz-side-nav-link ">
                             <i className="las la-question-circle aiz-side-nav-icon"></i>
@@ -156,12 +174,14 @@ function AsideSeller() {
 
                         </a>
                     </li>
+
                     <li className="aiz-side-nav-item">
                         <a href="https://mmslfashions.in/seller/support_ticket" className="aiz-side-nav-link ">
                             <i className="las la-atom aiz-side-nav-icon"></i>
                             <span className="aiz-side-nav-text">Support Ticket</span>
                         </a>
                     </li>
+
                 </ul>
             </div>
         </div>
