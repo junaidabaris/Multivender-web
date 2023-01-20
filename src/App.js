@@ -19,6 +19,9 @@ import ProductsPage from './pages/products';
 import MainVender from './venderFile/vender-page/mainPage';
 import { useState } from 'react';
 import DashbordPage from './venderFile/vender-page/dashbord';
+import SellerProducts from './venderFile/vender-page/products/Index';
+import ProductBulkPage from './venderFile/vender-page/ProductBulk/Index';
+
 function App() {
   const [show, setshow] = useState(true)
   return (
@@ -33,6 +36,8 @@ function App() {
         <Route path='/product-detail' element={<ProductDetailPage />} />
         <Route path='/seller' element={<MainVender setshow={setshow} />}>
           <Route path='' element={<DashbordPage/>}/>
+          <Route path='sellerProducts' element={<SellerProducts/>}/>
+          <Route path='product-bulk-upload' element={<ProductBulkPage/>}/>
         </Route>
       </Routes>
       {show && <Footer />}
