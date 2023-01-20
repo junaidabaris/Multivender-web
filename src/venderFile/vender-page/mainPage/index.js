@@ -5,8 +5,8 @@ function MainVender({ setshow }) {
     useEffect(() => {
         setshow(false)
     }, [])
-    return <body className="side-menu-open">
+    return <>
         hello vender
-    </body>
+    </>
 }
 export default MainVender
