@@ -18,7 +18,7 @@ import Footer from './common/footer/Footer';
 import ProductsPage from './pages/products';
 import MainVender from './venderFile/vender-page/mainPage';
 import { useState } from 'react';
-import Dashbord from './venderFile/vender-page/dashbord';
+import DashbordPage from './venderFile/vender-page/dashbord';
 function App() {
   const [show, setshow] = useState(true)
   return (
@@ -31,8 +31,8 @@ function App() {
         <Route path='page-not-found' element={<PageNotFoundPage />} />
         <Route path='/products' element={<ProductsPage />} />
         <Route path='/product-detail' element={<ProductDetailPage />} />
-        <Route path='/venderLogin' element={<MainVender setshow={setshow} />}>
-          <Route path='' element={<Dashbord/>}/>
+        <Route path='/seller' element={<MainVender setshow={setshow} />}>
+          <Route path='' element={<DashbordPage/>}/>
         </Route>
       </Routes>
       {show && <Footer />}
