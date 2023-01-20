@@ -1,8 +1,8 @@
 function VenderBanner() {
   return (
     <>
-    <div class="aiz-main-content">
-				<div class="px-15px px-lg-25px">
+    <div className="aiz-main-content">
+				<div className="px-15px px-lg-25px">
 
 <div className="aiz-titlebar mt-2 mb-4">
       <div className="row align-items-center">
