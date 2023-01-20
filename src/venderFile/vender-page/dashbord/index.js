@@ -1,7 +1,7 @@
 import Dashbord from "../../vender-components/Dashbord/Dashbord"
 
 function DashbordPage() {
-    return <div class="aiz-main-content">
+    return <div className="aiz-main-content">
         <Dashbord />
     </div>
 }
