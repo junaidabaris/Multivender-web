@@ -1,4 +1,10 @@
+import { useState } from "react"
+import { Link } from "react-router-dom"
+
 function AsideSeller() {
+    const [state, setState] = useState(false)
+
+
     return <div className="aiz-sidebar-wrap">
         <div className="aiz-sidebar left c-scrollbar">
             <div className="aiz-side-nav-logo-wrap">
@@ -13,7 +19,7 @@ function AsideSeller() {
             <div className="aiz-side-nav-wrap">
                 <div className="px-20px mb-3">
                     <input className="form-control bg-soft-secondary border-0 form-control-sm text-white" type="text"
-                        name="" placeholder="Search in menu" id="menu-search"  />
+                        name="" placeholder="Search in menu" id="menu-search" />
                 </div>
                 <ul className="aiz-side-nav-list" id="search-menu">
                 </ul>
@@ -25,23 +31,23 @@ function AsideSeller() {
                         </a>
                     </li>
                     <li className="aiz-side-nav-item">
-                        <a href="#" className="aiz-side-nav-link" >
+                        <a href="#" className="aiz-side-nav-link" onClick={() => { setState(!state) }} >
                             <i className="las la-shopping-cart aiz-side-nav-icon"></i>
                             <span className="aiz-side-nav-text">Products</span>
                             <span className="aiz-side-nav-arrow"></span>
                         </a>
-                        <ul className="aiz-side-nav-list level-2" id="product">
+                        <ul className={`aiz-side-nav-list level-2 mm-collapse ${state ? "mm-show" : "extra"}`} id="product">
                             <li className="aiz-side-nav-item">
-                                <a href="https://mmslfashions.in/seller/products" className="aiz-side-nav-link ">
+                                <Link to="sellerProducts" className="aiz-side-nav-link ">
                                     <span className="aiz-side-nav-text">Products</span>
-                                </a>
+                                </Link>
                             </li>
 
                             <li className="aiz-side-nav-item">
-                                <a href="https://mmslfashions.in/seller/product-bulk-upload/index"
+                                <Link to="product-bulk-upload"
                                     className="aiz-side-nav-link ">
                                     <span className="aiz-side-nav-text">Product Bulk Upload</span>
-                                </a>
+                                </Link>
                             </li>
                             <li className="aiz-side-nav-item">
                                 <a href="https://mmslfashions.in/seller/digitalproducts" className="aiz-side-nav-link ">
