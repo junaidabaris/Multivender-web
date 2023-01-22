@@ -29,6 +29,7 @@ import VenderPaymentHistory from './venderFile/vender-page/venderPaymentHistory/
 import SellerProducts from './venderFile/vender-page/products/Index';
 import ProductBulkPage from './venderFile/vender-page/ProductBulk/Index';
 import Digitalproducts from './venderFile/vender-page/digitalProduct';
+import ViewAllBrandPage from './pages/viewAllBrand/Index';
 
 function App() {
   const [show, setshow] = useState(true)
@@ -42,6 +43,7 @@ function App() {
         <Route path='page-not-found' element={<PageNotFoundPage />} />
         <Route path='/products' element={<ProductsPage />} />
         <Route path='/product-detail' element={<ProductDetailPage />} />
+        <Route path='/viewAllBrand' element={<ViewAllBrandPage />} />
         <Route path='/seller' element={<MainVender setshow={setshow} />}>
           <Route path='' element={<DashbordPage />} />
           <Route path='uploads' element={<UploadedFilesPage />} />
