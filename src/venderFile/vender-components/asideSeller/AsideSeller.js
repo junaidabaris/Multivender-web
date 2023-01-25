@@ -1,5 +1,3 @@
-
-
 import { useState } from "react"
 import { Link, NavLink } from "react-router-dom"
 
@@ -188,4 +186,4 @@ function AsideSeller() {
         <div className="aiz-sidebar-overlay"></div>
     </div>
 }
-export default AsideSeller
+export default AsideSeller;
