@@ -30,6 +30,9 @@ import SellerProducts from './venderFile/vender-page/products/Index';
 import ProductBulkPage from './venderFile/vender-page/ProductBulk/Index';
 import Digitalproducts from './venderFile/vender-page/digitalProduct';
 import ViewAllBrandPage from './pages/viewAllBrand/Index';
+import ReviewsPage from './venderFile/vender-page/reviews/Index';
+import SellerPackagesPage from './venderFile/vender-page/seller-packages/Index';
+import PackagesListPage from './venderFile/vender-page/packages-payment-list/Index';
 
 function App() {
   const [show, setshow] = useState(true)
@@ -56,6 +59,9 @@ function App() {
           <Route path='sellerProducts' element={<SellerProducts />} />
           <Route path='product-bulk-upload' element={<ProductBulkPage />} />
           <Route path='digitalproducts' element={<Digitalproducts />} />
+          <Route path='reviews' element={<ReviewsPage />} />
+          <Route path='seller-packages' element={<SellerPackagesPage />} />
+          <Route path='packages-payment-list' element={<PackagesListPage/>} />
         </Route>
       </Routes>
       {show && <Footer />}
