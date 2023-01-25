@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom"
 
 function AsideSeller() {
     const [state, setState] = useState(false)
+    const [pacage, setStatePacage] = useState(false)
 
 
     return <div className="aiz-sidebar-wrap">
@@ -31,11 +32,11 @@ function AsideSeller() {
                         </Link>
                     </li>
                     <li className="aiz-side-nav-item">
-                        <a href="#" className="aiz-side-nav-link" onClick={() => { setState(!state) }} >
+                        <Link to="#" className="aiz-side-nav-link" onClick={() => { setState(!state) }} >
                             <i className="las la-shopping-cart aiz-side-nav-icon"></i>
                             <span className="aiz-side-nav-text">Products</span>
                             <span className="aiz-side-nav-arrow"></span>
-                        </a>
+                        </Link>
                         <ul className={`aiz-side-nav-list level-2 mm-collapse ${state ? "mm-show" : "extra"}`} id="product">
                             <li className="aiz-side-nav-item">
                                 <NavLink to="sellerProducts" className="aiz-side-nav-link ">
@@ -55,9 +56,9 @@ function AsideSeller() {
                                 </NavLink>
                             </li>
                             <li className="aiz-side-nav-item">
-                                <a href="https://mmslfashions.in/seller/reviews" className="aiz-side-nav-link ">
+                                <Link to="reviews" className="aiz-side-nav-link ">
                                     <span className="aiz-side-nav-text">Product Reviews</span>
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </li>
@@ -77,23 +78,23 @@ function AsideSeller() {
                         </NavLink>
                     </li>
                     <li className="aiz-side-nav-item">
-                        <a href="#" className="aiz-side-nav-link" >
+                        <Link to="#" className="aiz-side-nav-link" onClick={() => { setStatePacage(!pacage) }}>
                             <i className="las la-shopping-cart aiz-side-nav-icon"></i>
                             <span className="aiz-side-nav-text">Package</span>
                             <span className="aiz-side-nav-arrow"></span>
-                        </a>
-                        <ul className="aiz-side-nav-list level-2">
+                        </Link>
+                        <ul className={`aiz-side-nav-list level-2 mm-collapse ${pacage ? "mm-show" : "extra"}`}>
                             <li className="aiz-side-nav-item">
-                                <a href="https://mmslfashions.in/seller/seller-packages" className="aiz-side-nav-link">
+                                <Link to="seller-packages" className="aiz-side-nav-link">
                                     <span className="aiz-side-nav-text">Packages</span>
-                                </a>
+                                </Link>
                             </li>
 
                             <li className="aiz-side-nav-item">
-                                <a href="https://mmslfashions.in/seller/packages-payment-list"
+                                <Link to="packages-payment-list"
                                     className="aiz-side-nav-link">
                                     <span className="aiz-side-nav-text">Purchase Packages</span>
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </li>
