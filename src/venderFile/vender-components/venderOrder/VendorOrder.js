@@ -14,7 +14,6 @@ function VenderOrder() {
                     className="form-control aiz-selectpicker"
                     data-placeholder="Filter by Payment Status"
                     name="payment_status"
-                    onchange="sort_orders()"
                   >
                     <option value="">Filter by Payment Status</option>
                     <option value="paid">Paid</option>
@@ -27,7 +26,7 @@ function VenderOrder() {
                     className="form-control aiz-selectpicker"
                     data-placeholder="Filter by Payment Status"
                     name="delivery_status"
-                    onchange="sort_orders()"
+                    // onchange="sort_orders()"
                   >
                     <option value="">Filter by Deliver Status</option>
                     <option value="pending">Pending</option>
@@ -70,7 +69,6 @@ function VenderOrder() {
                     <td>
                       <a
                         href="#20221103-09563323"
-                        onclick="show_order_details(3)"
                       >
                         20221103-09563323
                       </a>
@@ -106,7 +104,7 @@ function VenderOrder() {
                     <td>
                       <a
                         href="#20221006-19574683"
-                        onclick="show_order_details(2)"
+                        
                       >
                         20221006-19574683
                       </a>

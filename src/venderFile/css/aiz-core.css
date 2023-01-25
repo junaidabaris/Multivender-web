@@ -17107,3 +17107,17 @@ ul.social.colored [class*="linkedin"] {
 [dir="rtl"] .badge-custom{
     border-radius: 50em 0 0 50em;
 }
+
+
+.aiz-table.footable > tbody > tr.footable-empty > td:before {
+    content: "\f119";
+    font-family: "Line Awesome Free";
+    font-weight: 900;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    font-size: 60px;
+    opacity: 0.5;
+    transform: translate(-50%, 0px);
+}
+
