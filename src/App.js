@@ -25,6 +25,7 @@ import VenderPaymentHistory from './venderFile/vender-page/venderPaymentHistory/
 import SellerProducts from './venderFile/vender-page/products/Index';
 import ProductBulkPage from './venderFile/vender-page/ProductBulk/Index';
 import MoneyWithdrowPage from './venderFile/vender-page/venderMoneyWithdrow/Index';
+import Digitalproducts from './venderFile/vender-page/digitalProduct';
 
 function App() {
   const [show, setshow] = useState(true)
@@ -46,6 +47,7 @@ function App() {
           <Route path='sellerProducts' element={<SellerProducts/>}/>
           <Route path='product-bulk-upload' element={<ProductBulkPage/>}/>
           <Route path='money-withdraw-requests' element={<MoneyWithdrowPage/>}/>
+          <Route path='digitalproducts' element={<Digitalproducts/>}/>
         </Route>
       </Routes>
       {show && <Footer />}

@@ -27,10 +27,10 @@ function AsideSeller() {
                 </ul>
                 <ul className="aiz-side-nav-list" id="main-menu" data-toggle="aiz-side-menu">
                     <li className="aiz-side-nav-item">
-                        <a href="https://mmslfashions.in/seller/dashboard" className="aiz-side-nav-link">
+                        <Link to="/seller" className="aiz-side-nav-link">
                             <i className="las la-home aiz-side-nav-icon"></i>
                             <span className="aiz-side-nav-text">Dashboard</span>
-                        </a>
+                        </Link>
                     </li>
                     <li className="aiz-side-nav-item">
                         <a href="#" className="aiz-side-nav-link" onClick={() => { setState(!state) }} >
@@ -40,21 +40,21 @@ function AsideSeller() {
                         </a>
                         <ul className={`aiz-side-nav-list level-2 mm-collapse ${state ? "mm-show" : "extra"}`} id="product">
                             <li className="aiz-side-nav-item">
-                                <Link to="sellerProducts" className="aiz-side-nav-link ">
+                                <NavLink to="sellerProducts" className="aiz-side-nav-link ">
                                     <span className="aiz-side-nav-text">Products</span>
-                                </Link>
+                                </NavLink>
                             </li>
 
                             <li className="aiz-side-nav-item">
-                                <Link to="product-bulk-upload"
+                                <NavLink to="product-bulk-upload"
                                     className="aiz-side-nav-link ">
                                     <span className="aiz-side-nav-text">Product Bulk Upload</span>
-                                </Link>
+                                </NavLink>
                             </li>
                             <li className="aiz-side-nav-item">
-                                <a href="https://mmslfashions.in/seller/digitalproducts" className="aiz-side-nav-link ">
+                                <NavLink to="digitalproducts" className="aiz-side-nav-link ">
                                     <span className="aiz-side-nav-text">Digital Products</span>
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="aiz-side-nav-item">
                                 <a href="https://mmslfashions.in/seller/reviews" className="aiz-side-nav-link ">
@@ -130,6 +130,12 @@ function AsideSeller() {
                         <span className="aiz-side-nav-text">Received Refund Request</span>
                     </Link>
                 </li>
+                <li className="aiz-side-nav-item">
+                    <a href="https://mmslfashions.in/refund-request" className="aiz-side-nav-link ">
+                        <i className="las la-backward aiz-side-nav-icon"></i>
+                        <span className="aiz-side-nav-text">Received Refund Request</span>
+                    </a>
+                </li>
 
 
                     <li className="aiz-side-nav-item">
@@ -147,10 +153,10 @@ function AsideSeller() {
                 </li>
 
                     <li className="aiz-side-nav-item">
-                        <a href="https://mmslfashions.in/seller/money-withdraw-requests" className="aiz-side-nav-link ">
+                        <NavLink to="money-withdraw-requests" className="aiz-side-nav-link ">
                             <i className="las la-money-bill-wave-alt aiz-side-nav-icon"></i>
                             <span className="aiz-side-nav-text">Money Withdraw</span>
-                        </a>
+                        </NavLink>
                     </li>
 
                     <li className="aiz-side-nav-item">
