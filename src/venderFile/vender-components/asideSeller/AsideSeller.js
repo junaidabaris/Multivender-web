@@ -159,25 +159,25 @@ function AsideSeller() {
                     </li>
 
                     <li className="aiz-side-nav-item">
-                        <a href="https://mmslfashions.in/seller/conversations" className="aiz-side-nav-link ">
+                        <NavLink to="conversations" className="aiz-side-nav-link ">
                             <i className="las la-comment aiz-side-nav-icon"></i>
                             <span className="aiz-side-nav-text">Conversations</span>
-                        </a>
+                        </NavLink>
                     </li>
 
                     <li className="aiz-side-nav-item">
-                        <a href="https://mmslfashions.in/seller/product-queries" className="aiz-side-nav-link ">
+                        <NavLink to="product-queries" className="aiz-side-nav-link ">
                             <i className="las la-question-circle aiz-side-nav-icon"></i>
                             <span className="aiz-side-nav-text">Product Queries</span>
 
-                        </a>
+                        </NavLink>
                     </li>
 
                     <li className="aiz-side-nav-item">
-                        <a href="https://mmslfashions.in/seller/support_ticket" className="aiz-side-nav-link ">
+                        <NavLink to="support-ticket" className="aiz-side-nav-link ">
                             <i className="las la-atom aiz-side-nav-icon"></i>
                             <span className="aiz-side-nav-text">Support Ticket</span>
-                        </a>
+                        </NavLink>
                     </li>
 
                 </ul>
