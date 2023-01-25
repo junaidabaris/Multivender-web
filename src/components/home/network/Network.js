@@ -6,7 +6,7 @@ function Network() {
       <section className="networkSec">
         <div className="container">
           <div className="networkItem">
-            <div class="fisherman-content mb-5">
+            <div className="fisherman-content mb-5">
               <span>our network</span>
               <h3>emi network</h3>
             </div>
