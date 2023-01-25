@@ -74,8 +74,8 @@ jQuery(function ($) {
         animateOut: 'fadeOut',
         items: 1,
         navText: [
-            "<i class='flaticon-left-chevron'></i>",
-            "<i class='flaticon-right-chevron'></i>"
+            "<i className='flaticon-left-chevron'></i>",
+            "<i className='flaticon-right-chevron'></i>"
         ]
     });
     
@@ -123,8 +123,8 @@ jQuery(function ($) {
         items: 2,
         margin: 30,
         navText: [
-            "<i class='flaticon-left'></i>",
-            "<i class='flaticon-right'></i>"
+            "<i className='flaticon-left'></i>",
+            "<i className='flaticon-right'></i>"
         ],
         responsive: {
             0: {
@@ -154,8 +154,8 @@ jQuery(function ($) {
         items: 4,
         margin: 30,
         navText: [
-            "<i class='flaticon-left'></i>",
-            "<i class='flaticon-right'></i>"
+            "<i className='flaticon-left'></i>",
+            "<i className='flaticon-right'></i>"
         ],
         responsive: {
             0: {
@@ -185,8 +185,8 @@ jQuery(function ($) {
         center: true,
         margin: 30,
         navText: [
-            "<i class='flaticon-left'></i>",
-            "<i class='flaticon-right'></i>"
+            "<i className='flaticon-left'></i>",
+            "<i className='flaticon-right'></i>"
         ],
         responsive: {
             0: {
@@ -212,8 +212,8 @@ jQuery(function ($) {
         autoplayHoverPause: true,
         autoplay: true,
         navText: [
-            "<i class='flaticon-left-1'></i>",
-            "<i class='flaticon-right-1'></i>"
+            "<i className='flaticon-left-1'></i>",
+            "<i className='flaticon-right-1'></i>"
         ],
         responsive: {
             0: {
@@ -241,8 +241,8 @@ jQuery(function ($) {
         smartSpeed: 1000,
         margin: 20,
         navText: [
-            "<i class='flaticon-left'></i>",
-            "<i class='flaticon-right'></i>"
+            "<i className='flaticon-left'></i>",
+            "<i className='flaticon-right'></i>"
         ],
         responsive: {
             0: {
@@ -267,8 +267,8 @@ jQuery(function ($) {
         autoplayHoverPause: true,
         autoplay: true,
         navText: [
-            "<i class='flaticon-left-chevron'></i>",
-            "<i class='flaticon-right-chevron'></i>"
+            "<i className='flaticon-left-chevron'></i>",
+            "<i className='flaticon-right-chevron'></i>"
         ],
         responsive: {
             0: {
@@ -420,10 +420,10 @@ jQuery(function ($) {
     });
 
     // Buy Now Btn
-	$('body').append("<a href='https://abarissoftech.com' target='_blank' class='buy-now-btn'>Buy Now</a>");
+	$('body').append("<a href='https://abarissoftech.com' target='_blank' className='buy-now-btn'>Buy Now</a>");
 
 	// Switch Btn
-	$('body').append("<div class='switch-box'><label id='switch' class='switch'><input type='checkbox' onchange='toggleTheme()' id='slider'><span class='slider round'></span></label></div>");
+	$('body').append("<div className='switch-box'><label id='switch' className='switch'><input type='checkbox' onchange='toggleTheme()' id='slider'><span className='slider round'></span></label></div>");
     
 }(jQuery));
 

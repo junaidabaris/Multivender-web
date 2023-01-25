@@ -12,7 +12,7 @@ function Brands() {
       <section className="brandsSec">
         <div className="container">
           <div className="brandsItem">
-            <div class="fisherman-content mb-5">
+            <div className="fisherman-content mb-5">
               <span>our brands</span>
               <h3>top brands</h3>
             </div>

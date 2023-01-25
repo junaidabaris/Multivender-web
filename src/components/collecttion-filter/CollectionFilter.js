@@ -27,11 +27,11 @@ function CollectionFilter() {
             </select>
           </div>
           <div className="collectionFilterList">
-            <ul class="no-bullets inline-list text-right">
+            <ul className="no-bullets inline-list text-right">
               <li>
                 <button
                   type="button"
-                  class="grid-view-btn"
+                  className="grid-view-btn"
                   data-view="large"
                   title="Large"
                 >
@@ -41,7 +41,7 @@ function CollectionFilter() {
               <li>
                 <button
                   type="button"
-                  class="grid-view-btn is-active"
+                  className="grid-view-btn is-active"
                   data-view="small"
                   title="Small"
                 >
@@ -51,7 +51,7 @@ function CollectionFilter() {
               <li>
                 <button
                   type="button"
-                  class="grid-view-btn"
+                  className="grid-view-btn"
                   data-view="list"
                   title="List"
                 >
