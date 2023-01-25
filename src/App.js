@@ -30,6 +30,10 @@ import SellerProducts from './venderFile/vender-page/products/Index';
 import ProductBulkPage from './venderFile/vender-page/ProductBulk/Index';
 import Digitalproducts from './venderFile/vender-page/digitalProduct';
 import ViewAllBrandPage from './pages/viewAllBrand/Index';
+import ConversationsPage from './venderFile/vender-page/conversations';
+import ProductQuerriesPage from './venderFile/vender-page/productQuerries';
+import SupportTicketPage from './venderFile/vender-page/supportTicket';
+import CommissionHistoryPage from './venderFile/vender-page/comissionHistory/Index';
 import ReviewsPage from './venderFile/vender-page/reviews/Index';
 import SellerPackagesPage from './venderFile/vender-page/seller-packages/Index';
 import PackagesListPage from './venderFile/vender-page/packages-payment-list/Index';
@@ -56,9 +60,13 @@ function App() {
           <Route path='banners' element={<VendorBannersPage />} />
           <Route path='orders' element={<VenderOrderPage />} />
           <Route path='payments' element={<VenderPaymentHistory />} />
+          <Route path='commission-history' element={<CommissionHistoryPage />}/>
           <Route path='sellerProducts' element={<SellerProducts />} />
           <Route path='product-bulk-upload' element={<ProductBulkPage />} />
           <Route path='digitalproducts' element={<Digitalproducts />} />
+          <Route path={'conversations'} element={<ConversationsPage />} />
+          <Route path={'product-queries'} element={<ProductQuerriesPage />} />
+          <Route path={'support-ticket'} element={<SupportTicketPage />} />
           <Route path='reviews' element={<ReviewsPage />} />
           <Route path='seller-packages' element={<SellerPackagesPage />} />
           <Route path='packages-payment-list' element={<PackagesListPage/>} />
