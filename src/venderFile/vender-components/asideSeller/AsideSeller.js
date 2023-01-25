@@ -145,17 +145,17 @@ function AsideSeller() {
                     </li>
 
                     <li className="aiz-side-nav-item">
-                        <NavLink to="money-withdraw-requests" className="aiz-side-nav-link ">
+                        <NavLink to="pament-withdrow" className="aiz-side-nav-link ">
                             <i className="las la-money-bill-wave-alt aiz-side-nav-icon"></i>
                             <span className="aiz-side-nav-text">Money Withdraw</span>
                         </NavLink>
                     </li>
 
                     <li className="aiz-side-nav-item">
-                        <a href="https://mmslfashions.in/seller/commission-history" className="aiz-side-nav-link">
+                        <NavLink to="commission-history" className="aiz-side-nav-link">
                             <i className="las la-file-alt aiz-side-nav-icon"></i>
                             <span className="aiz-side-nav-text">Commission History</span>
-                        </a>
+                        </NavLink>
                     </li>
 
                     <li className="aiz-side-nav-item">

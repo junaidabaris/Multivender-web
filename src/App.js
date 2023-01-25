@@ -28,12 +28,12 @@ import VenderOrderPage from './venderFile/vender-page/venderOrder/Index';
 import VenderPaymentHistory from './venderFile/vender-page/venderPaymentHistory/Index';
 import SellerProducts from './venderFile/vender-page/products/Index';
 import ProductBulkPage from './venderFile/vender-page/ProductBulk/Index';
-import MoneyWithdrowPage from './venderFile/vender-page/venderMoneyWithdrow/Index';
 import Digitalproducts from './venderFile/vender-page/digitalProduct';
 import ViewAllBrandPage from './pages/viewAllBrand/Index';
 import ConversationsPage from './venderFile/vender-page/conversations';
 import ProductQuerriesPage from './venderFile/vender-page/productQuerries';
 import SupportTicketPage from './venderFile/vender-page/supportTicket';
+import CommissionHistoryPage from './venderFile/vender-page/comissionHistory/Index';
 
 function App() {
   const [show, setshow] = useState(true)
@@ -57,6 +57,7 @@ function App() {
           <Route path='banners' element={<VendorBannersPage />} />
           <Route path='orders' element={<VenderOrderPage />} />
           <Route path='payments' element={<VenderPaymentHistory />} />
+          <Route path='commission-history' element={<CommissionHistoryPage />}/>
           <Route path='sellerProducts' element={<SellerProducts />} />
           <Route path='product-bulk-upload' element={<ProductBulkPage />} />
           <Route path='digitalproducts' element={<Digitalproducts />} />
