@@ -28,6 +28,7 @@ import VenderOrderPage from './venderFile/vender-page/venderOrder/Index';
 import VenderPaymentHistory from './venderFile/vender-page/venderPaymentHistory/Index';
 import SellerProducts from './venderFile/vender-page/products/Index';
 import ProductBulkPage from './venderFile/vender-page/ProductBulk/Index';
+import MoneyWithdrowPage from './venderFile/vender-page/venderMoneyWithdrow/Index';
 import Digitalproducts from './venderFile/vender-page/digitalProduct';
 import ViewAllBrandPage from './pages/viewAllBrand/Index';
 

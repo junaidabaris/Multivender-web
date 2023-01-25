@@ -147,10 +147,10 @@ function AsideSeller() {
                     </li>
 
                     <li className="aiz-side-nav-item">
-                        <a href="https://mmslfashions.in/seller/money-withdraw-requests" className="aiz-side-nav-link ">
+                        <NavLink to="money-withdraw-requests" className="aiz-side-nav-link ">
                             <i className="las la-money-bill-wave-alt aiz-side-nav-icon"></i>
                             <span className="aiz-side-nav-text">Money Withdraw</span>
-                        </a>
+                        </NavLink>
                     </li>
 
                     <li className="aiz-side-nav-item">
