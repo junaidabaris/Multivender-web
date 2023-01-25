@@ -30,8 +30,9 @@ import SellerProducts from './venderFile/vender-page/products/Index';
 import ProductBulkPage from './venderFile/vender-page/ProductBulk/Index';
 import Digitalproducts from './venderFile/vender-page/digitalProduct';
 import ViewAllBrandPage from './pages/viewAllBrand/Index';
-import MoneyWithdrowPage from './venderFile/vender-page/venderMoneyWithdrow/Index'
-import CommissionHistoryPage from './venderFile/vender-page/comissionHistory/Index';
+import ConversationsPage from './venderFile/vender-page/conversations';
+import ProductQuerriesPage from './venderFile/vender-page/productQuerries';
+import SupportTicketPage from './venderFile/vender-page/supportTicket';
 
 function App() {
   const [show, setshow] = useState(true)
@@ -58,8 +59,9 @@ function App() {
           <Route path='sellerProducts' element={<SellerProducts />} />
           <Route path='product-bulk-upload' element={<ProductBulkPage />} />
           <Route path='digitalproducts' element={<Digitalproducts />} />
-          <Route path="pament-withdrow" element={<MoneyWithdrowPage/>}/>
-          <Route path='commission-history' element={<CommissionHistoryPage/>}/>
+          <Route path={'conversations'} element={<ConversationsPage />} />
+          <Route path={'product-queries'} element={<ProductQuerriesPage />} />
+          <Route path={'support-ticket'} element={<SupportTicketPage />} />
         </Route>
       </Routes>
       {show && <Footer />}
