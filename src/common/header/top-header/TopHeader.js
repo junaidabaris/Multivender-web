@@ -58,15 +58,18 @@ function TopHeader() {
                     <select name="" id="">
                       <option value="england">
                         {" "}
-                        <img src={eng} alt="England" /> ENG{" "}
+                        England
+                        
                       </option>
                       <option value="bangladesh">
                         {" "}
-                        <img src={bangla} alt="Bangladesh" /> Bagla
+                        Bangladesh
+                        
                       </option>
                       <option value="saudi">
                         {" "}
-                        <img src={saudi} alt="Saudi" /> saudi
+                        Saudi
+                        
                       </option>
                     </select>
                   </div>

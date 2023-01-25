@@ -289,46 +289,46 @@ function ProductItem() {
       </div>
 
 
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Quick Shop</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h1 className="modal-title fs-5" id="exampleModalLabel">Quick Shop</h1>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body" style={{ display: "flex" }}>
+            <div className="modal-body" style={{ display: "flex" }}>
               <div>
-                <section id="services" class="services section-bg">
-                  <div class="container-fluid">
-                    <div class="col-sm-12 text-center mb-4">
-                      <a class="btn btn-primary" target="_blank" href="http://paypal.me/skd1996"> Donate Now <i class="fa fa-dollar"></i></a>
+                <section id="services" className="services section-bg">
+                  <div className="container-fluid">
+                    <div className="col-sm-12 text-center mb-4">
+                      <a className="btn btn-primary" target="_blank" href="http://paypal.me/skd1996"> Donate Now <i className="fa fa-dollar"></i></a>
                     </div>
-                    <div class="row row-sm">
-                      <div class="col-md-6 _boxzoom">
+                    <div className="row row-sm">
+                      <div className="col-md-6 _boxzoom">
                         <img src={fertilizer6} />
-                        <div class="_product-images">
-                          <div class="picZoomer">
-                            <img class="my_img" src="https://s.fotorama.io/1.jpg" alt="" />
+                        <div className="_product-images">
+                          <div className="picZoomer">
+                            <img className="my_img" src="https://s.fotorama.io/1.jpg" alt="" />
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-6">
-                        <div class="_product-detail-content">
-                          <p class="_p-name"> Milton Bottle </p>
-                          <div class="_p-price-box">
-                            <div class="p-list">
-                              <span> M.R.P. : <i class="fa fa-inr"></i> <del> 1399  </del>   </span>
-                              <span class="price"> Rs. 699 </span>
+                      <div className="col-md-6">
+                        <div className="_product-detail-content">
+                          <p className="_p-name"> Milton Bottle </p>
+                          <div className="_p-price-box">
+                            <div className="p-list">
+                              <span> M.R.P. : <i className="fa fa-inr"></i> <del> 1399  </del>   </span>
+                              <span className="price"> Rs. 699 </span>
                             </div>
-                            <div class="_p-add-cart">
-                              <div class="_p-qty">
+                            <div className="_p-add-cart">
+                              <div className="_p-qty">
                                 <span>Add Quantity</span>
-                                <div class="value-button decrease_" id="" value="Decrease Value">-</div>
-                                <input type="number" name="qty" id="number" value="1" />
-                                <div class="value-button increase_" id="" value="Increase Value">+</div>
+                                <div className="value-button decrease_" id="" value="Decrease Value">-</div>
+                                <input type="number" name="qty" id="number" value="1" readOnly />
+                                <div className="value-button increase_" id="" value="Increase Value">+</div>
                               </div>
                             </div>
-                            <div class="_p-features">
+                            <div className="_p-features">
                               <span> Description About this product:- </span>
                               Solid color polyester/linen full blackout thick sunscreen floor curtain
                               Type: General Pleat
@@ -350,19 +350,19 @@ function ProductItem() {
                               Usage: Window Decoration
                               Keywords: Ready Made Blackout Curtain
                             </div>
-                            <form action="" method="post" accept-charset="utf-8">
-                              <ul class="spe_ul"></ul>
-                              <div class="_p-qty-and-cart">
-                                <div class="_p-add-cart">
-                                  <button class="btn-theme btn buy-btn" tabindex="0">
-                                    <i class="fa fa-shopping-cart"></i> Buy Now
+                            <form action="" method="post" acceptCharset="utf-8">
+                              <ul className="spe_ul"></ul>
+                              <div className="_p-qty-and-cart">
+                                <div className="_p-add-cart">
+                                  <button className="btn-theme btn buy-btn" tabIndex="0">
+                                    <i className="fa fa-shopping-cart"></i> Buy Now
                                   </button>
-                                  <button class="btn-theme btn btn-success" tabindex="0">
-                                    <i class="fa fa-shopping-cart"></i> Add to Cart
+                                  <button className="btn-theme btn btn-success" tabIndex="0">
+                                    <i className="fa fa-shopping-cart"></i> Add to Cart
                                   </button>
-                                  <input type="hidden" name="pid" value="18" />
-                                  <input type="hidden" name="price" value="850" />
-                                  <input type="hidden" name="url" value="" />
+                                  <input type="hidden" name="pid" value="18"  readOnly/>
+                                  <input type="hidden" name="price" value="850"  readOnly/>
+                                  <input type="hidden" name="url" value=""  readOnly/>
                                 </div>
                               </div>
                             </form>

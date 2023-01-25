@@ -30,12 +30,12 @@ function UploadedFilesComp() {
                                     </div>
                                 </div>
                                 <div className="col-md-3 ml-auto mr-0">
-                                    <div className="dropdown bootstrap-select form-control form-control-xs aiz-"><select className="form-control form-control-xs aiz-selectpicker" name="sort" onchange="sort_uploads()" tabindex="-98">
+                                    <div className="dropdown bootstrap-select form-control form-control-xs aiz-"><select className="form-control form-control-xs aiz-selectpicker" name="sort" onchange="sort_uploads()" tabIndex="-98">
                                         <option value="newest">Sort by newest</option>
                                         <option value="oldest">Sort by oldest</option>
                                         <option value="smallest">Sort by smallest</option>
                                         <option value="largest">Sort by largest</option>
-                                    </select><button type="button" className="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-1" aria-haspopup="listbox" aria-expanded="false" title="Sort by newest" fdprocessedid="9uazn"><div className="filter-option"><div className="filter-option-inner"><div className="filter-option-inner-inner">Sort by newest</div></div> </div></button><div className="dropdown-menu "><div className="inner show" role="listbox" id="bs-select-1" tabindex="-1"><ul className="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+                                    </select><button type="button" className="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-1" aria-haspopup="listbox" aria-expanded="false" title="Sort by newest" fdprocessedid="9uazn"><div className="filter-option"><div className="filter-option-inner"><div className="filter-option-inner-inner">Sort by newest</div></div> </div></button><div className="dropdown-menu "><div className="inner show" role="listbox" id="bs-select-1" tabIndex="-1"><ul className="dropdown-menu inner show" role="presentation"></ul></div></div></div>
                                 </div>
                                 <div className="col-md-3">
                                     <input type="text" className="form-control form-control-xs" name="search" placeholder="Search your files" value="" fdprocessedid="p00zan" />
