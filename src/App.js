@@ -40,6 +40,7 @@ import SupportTicketPage from './venderFile/vender-page/supportTicket';
 import CommissionHistoryPage from './venderFile/vender-page/comissionHistory/Index';
 import MoneyWithdrowPage from "./venderFile/vender-page/venderMoneyWithdrow/Index";
 import DashbordCustomer from "./Customer-Panal/pages/dashbord/Index";
+import PurchaseHistoryPage from "./Customer-Panal/pages/purchase/PurchaseHistoryPage";
 
 function App() {
   const [show, setshow] = useState(true);
@@ -73,7 +74,7 @@ function App() {
           <Route path="pament-withdrow" element={<MoneyWithdrowPage />} />
         </Route>
         <Route path='/customer' element={<DashbordCustomer />}>
-
+          <Route path="purchase-history" element={<PurchaseHistoryPage/>}/>
         </Route>
       </Routes>
       {show && <Footer />}
