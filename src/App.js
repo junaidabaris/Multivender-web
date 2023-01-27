@@ -8,10 +8,6 @@ import "./venderFile/css/stylesheets.css";
 import "./venderFile/css/aiz-core.css";
 import "./venderFile/css/custom-style.css";
 
-import "./venderFile/css/vendors.css"
-import "./venderFile/css/stylesheets.css"
-import "./venderFile/css/aiz-core.css"
-import "./venderFile/css/custom-style.css"
 
 
 import { Navigate, Route, Routes } from 'react-router-dom';
@@ -42,6 +38,8 @@ import MoneyWithdrowPage from "./venderFile/vender-page/venderMoneyWithdrow/Inde
 import DashbordCustomer from "./Customer-Panal/pages/dashbord/Index";
 import PurchaseHistoryPage from "./Customer-Panal/pages/purchase/PurchaseHistoryPage";
 import DownloadPage from "./Customer-Panal/pages/download/DownloadPage";
+import DashbordCard from "./Customer-Panal/components/dashbord/DashbordCard";
+import SendRefundPage from "./Customer-Panal/pages/sent-refund-request/Index";
 
 function App() {
   const [show, setshow] = useState(true);
@@ -76,7 +74,8 @@ function App() {
         </Route>
         <Route path='/customer' element={<DashbordCustomer />}>
             <Route path="purchase_history" element={<PurchaseHistoryPage/>}/>
-            <Route path="digital_purchase_history" element={<DownloadPage/>}/>
+            <Route path="" element={<DashbordCard/>}/>
+            <Route path="digital_purchase_history" element={<DownloadPage/>}/><Route path="sent-refund-request" element={<SendRefundPage/>}/>
         </Route>
       </Routes>
       {show && <Footer />}
