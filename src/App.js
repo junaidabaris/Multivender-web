@@ -50,14 +50,14 @@ function App() {
     <>
       {show && <Header />}
       <Routes>
-        <Route path='/' element={<Navigate to="/home" />} />
-        <Route path='/home' element={<HomePage />} />
+        <Route path='/' element={<Navigate to="/home/seller" />} />
+        {/* <Route path='/home/seller' element={<HomePage />} />
         <Route path='*' element={<Navigate to="/page-not-found" />} />
         <Route path='page-not-found' element={<PageNotFoundPage />} />
         <Route path='/products' element={<ProductsPage />} />
         <Route path='/product-detail' element={<ProductDetailPage />} />
-        <Route path='/viewAllBrand' element={<ViewAllBrandPage />} />
-        <Route path='/seller' element={<MainVender setshow={setshow} />}>
+        <Route path='/viewAllBrand' element={<ViewAllBrandPage />} /> */}
+        <Route path='/home/seller' element={<MainVender setshow={setshow} />}>
           <Route path='' element={<DashbordPage />} />
           <Route path='uploads' element={<UploadedFilesPage />} />
           <Route path='coupon' element={<CouponsPage />} />
