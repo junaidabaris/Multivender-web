@@ -39,6 +39,7 @@ import ProductQuerriesPage from './venderFile/vender-page/productQuerries';
 import SupportTicketPage from './venderFile/vender-page/supportTicket';
 import CommissionHistoryPage from './venderFile/vender-page/comissionHistory/Index';
 import MoneyWithdrowPage from "./venderFile/vender-page/venderMoneyWithdrow/Index";
+import DashbordCustomer from "./Customer-Panal/pages/dashbord/Index";
 
 function App() {
   const [show, setshow] = useState(true);
@@ -62,14 +63,17 @@ function App() {
           <Route path='banners' element={<VendorBannersPage />} />
           <Route path='orders' element={<VenderOrderPage />} />
           <Route path='payments' element={<VenderPaymentHistory />} />
-          <Route path='commission-history' element={<CommissionHistoryPage />}/>
+          <Route path='commission-history' element={<CommissionHistoryPage />} />
           <Route path='sellerProducts' element={<SellerProducts />} />
           <Route path='product-bulk-upload' element={<ProductBulkPage />} />
           <Route path='digitalproducts' element={<Digitalproducts />} />
           <Route path={'conversations'} element={<ConversationsPage />} />
           <Route path={'product-queries'} element={<ProductQuerriesPage />} />
           <Route path={'support-ticket'} element={<SupportTicketPage />} />
-          <Route path="pament-withdrow" element={<MoneyWithdrowPage/>}/>
+          <Route path="pament-withdrow" element={<MoneyWithdrowPage />} />
+        </Route>
+        <Route path='/customer' element={<DashbordCustomer />}>
+
         </Route>
       </Routes>
       {show && <Footer />}
