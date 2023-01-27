@@ -8,10 +8,6 @@ import "./venderFile/css/stylesheets.css";
 import "./venderFile/css/aiz-core.css";
 import "./venderFile/css/custom-style.css";
 
-import "./venderFile/css/vendors.css"
-import "./venderFile/css/stylesheets.css"
-import "./venderFile/css/aiz-core.css"
-import "./venderFile/css/custom-style.css"
 
 
 import { Navigate, Route, Routes } from 'react-router-dom';
@@ -40,6 +36,8 @@ import SupportTicketPage from './venderFile/vender-page/supportTicket';
 import CommissionHistoryPage from './venderFile/vender-page/comissionHistory/Index';
 import MoneyWithdrowPage from "./venderFile/vender-page/venderMoneyWithdrow/Index";
 import DashbordCustomer from "./Customer-Panal/pages/dashbord/Index";
+import DashbordCard from "./Customer-Panal/components/dashbord/DashbordCard";
+import SendRefundPage from "./Customer-Panal/pages/sent-refund-request/Index";
 
 function App() {
   const [show, setshow] = useState(true);
@@ -73,7 +71,8 @@ function App() {
           <Route path="pament-withdrow" element={<MoneyWithdrowPage />} />
         </Route>
         <Route path='/customer' element={<DashbordCustomer />}>
-            
+            <Route path="" element={<DashbordCard/>}/>
+            <Route path="sent-refund-request" element={<SendRefundPage/>}/>
         </Route>
       </Routes>
       {show && <Footer />}
