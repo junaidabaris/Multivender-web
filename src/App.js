@@ -75,7 +75,8 @@ function App() {
         <Route path='/customer' element={<DashbordCustomer />}>
             <Route path="purchase_history" element={<PurchaseHistoryPage/>}/>
             <Route path="" element={<DashbordCard/>}/>
-            <Route path="digital_purchase_history" element={<DownloadPage/>}/><Route path="sent-refund-request" element={<SendRefundPage/>}/>
+            <Route path="digital_purchase_history" element={<DownloadPage/>}/>
+            <Route path="sent-refund-request" element={<SendRefundPage/>}/>
         </Route>
       </Routes>
       {show && <Footer />}
