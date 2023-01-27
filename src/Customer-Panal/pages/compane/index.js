@@ -1,7 +1,9 @@
+import Compare from "../../components/dashbord/compare/Compare";
+
 function ComparePage() {
     return (
         <>
-            hello comapre page jilani
+            <Compare />
         </>
     )
 }

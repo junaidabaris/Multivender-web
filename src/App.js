@@ -41,6 +41,8 @@ import CommissionHistoryPage from './venderFile/vender-page/comissionHistory/Ind
 import MoneyWithdrowPage from "./venderFile/vender-page/venderMoneyWithdrow/Index";
 import DashbordCustomer from "./Customer-Panal/pages/dashbord/Index";
 import ComparePage from "./Customer-Panal/pages/compane";
+import WishlistPage from "./Customer-Panal/pages/wishlistPage";
+import MyWallletPage from "./Customer-Panal/pages/myWallet";
 
 function App() {
   const [show, setshow] = useState(true);
@@ -74,7 +76,9 @@ function App() {
           <Route path="pament-withdrow" element={<MoneyWithdrowPage />} />
         </Route>
         <Route path='/customer' element={<DashbordCustomer />}>
-          <Route path="/compare" element={<ComparePage />} />
+          {/* <Route path="compare" element={<ComparePage />} /> */}
+          <Route path="wishlists" element={<WishlistPage />} />
+          <Route path="wallet" element={<MyWallletPage />} />
         </Route>
       </Routes>
       {show && <Footer />}
