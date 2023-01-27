@@ -74,7 +74,7 @@ function App() {
           <Route path="pament-withdrow" element={<MoneyWithdrowPage />} />
         </Route>
         <Route path='/customer' element={<DashbordCustomer />}>
-          <Route path="purchase-history" element={<PurchaseHistoryPage/>}/>
+            
         </Route>
       </Routes>
       {show && <Footer />}

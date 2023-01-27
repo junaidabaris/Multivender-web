@@ -655,9 +655,7 @@ fixed-bottom 1030*/
     background-repeat: no-repeat;
 }
 
-.bg-primary {
-    background-color: #124a2f !important;
-}
+
 .bg-soft-primary {
     background-color: var(--soft-primary) !important;
 }
