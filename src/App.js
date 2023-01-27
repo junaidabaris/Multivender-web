@@ -36,6 +36,8 @@ import SupportTicketPage from './venderFile/vender-page/supportTicket';
 import CommissionHistoryPage from './venderFile/vender-page/comissionHistory/Index';
 import MoneyWithdrowPage from "./venderFile/vender-page/venderMoneyWithdrow/Index";
 import DashbordCustomer from "./Customer-Panal/pages/dashbord/Index";
+import PurchaseHistoryPage from "./Customer-Panal/pages/purchase/PurchaseHistoryPage";
+import DownloadPage from "./Customer-Panal/pages/download/DownloadPage";
 import DashbordCard from "./Customer-Panal/components/dashbord/DashbordCard";
 import SendRefundPage from "./Customer-Panal/pages/sent-refund-request/Index";
 
@@ -71,7 +73,9 @@ function App() {
           <Route path="pament-withdrow" element={<MoneyWithdrowPage />} />
         </Route>
         <Route path='/customer' element={<DashbordCustomer />}>
+            <Route path="purchase_history" element={<PurchaseHistoryPage/>}/>
             <Route path="" element={<DashbordCard/>}/>
+            <Route path="digital_purchase_history" element={<DownloadPage/>}/>
             <Route path="sent-refund-request" element={<SendRefundPage/>}/>
         </Route>
       </Routes>
