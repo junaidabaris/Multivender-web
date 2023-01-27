@@ -6,9 +6,7 @@ function DashbordCustomer() {
         <div className="container">
             <div className="d-flex align-items-start">
                 <AsideBar />
-
                 <Outlet></Outlet>
-
             </div>
         </div>
     </section>
