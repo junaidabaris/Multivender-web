@@ -1,8 +1,12 @@
-import Header from './common/header/Header';
+import Header from "./common/header/Header";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./assets/css/media.css";
 import "./assets/css/style.css";
 
+import "./venderFile/css/vendors.css";
+import "./venderFile/css/stylesheets.css";
+import "./venderFile/css/aiz-core.css";
+import "./venderFile/css/custom-style.css";
 
 import "./venderFile/css/vendors.css"
 import "./venderFile/css/stylesheets.css"
@@ -34,12 +38,10 @@ import ConversationsPage from './venderFile/vender-page/conversations';
 import ProductQuerriesPage from './venderFile/vender-page/productQuerries';
 import SupportTicketPage from './venderFile/vender-page/supportTicket';
 import CommissionHistoryPage from './venderFile/vender-page/comissionHistory/Index';
-import ReviewsPage from './venderFile/vender-page/reviews/Index';
-import SellerPackagesPage from './venderFile/vender-page/seller-packages/Index';
-import PackagesListPage from './venderFile/vender-page/packages-payment-list/Index';
+import MoneyWithdrowPage from "./venderFile/vender-page/venderMoneyWithdrow/Index";
 
 function App() {
-  const [show, setshow] = useState(true)
+  const [show, setshow] = useState(true);
   return (
     <>
       {show && <Header />}
@@ -67,9 +69,7 @@ function App() {
           <Route path={'conversations'} element={<ConversationsPage />} />
           <Route path={'product-queries'} element={<ProductQuerriesPage />} />
           <Route path={'support-ticket'} element={<SupportTicketPage />} />
-          <Route path='reviews' element={<ReviewsPage />} />
-          <Route path='seller-packages' element={<SellerPackagesPage />} />
-          <Route path='packages-payment-list' element={<PackagesListPage/>} />
+          <Route path="pament-withdrow" element={<MoneyWithdrowPage/>}/>
         </Route>
       </Routes>
       {show && <Footer />}
