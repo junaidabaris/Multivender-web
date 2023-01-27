@@ -1,4 +1,5 @@
-import PurchaseHistory from "../../components/dashbord/purchase/PurchaseHistory"
+import PurchaseHistory from "../../components/purchase/PurchaseHistory"
+
 
 
 function PurchaseHistoryPage(){
