@@ -8,10 +8,6 @@ import "./venderFile/css/stylesheets.css";
 import "./venderFile/css/aiz-core.css";
 import "./venderFile/css/custom-style.css";
 
-import "./venderFile/css/vendors.css"
-import "./venderFile/css/stylesheets.css"
-import "./venderFile/css/aiz-core.css"
-import "./venderFile/css/custom-style.css"
 
 
 import { Navigate, Route, Routes } from 'react-router-dom';
@@ -43,6 +39,10 @@ import DashbordCustomer from "./Customer-Panal/pages/dashbord/Index";
 import ComparePage from "./Customer-Panal/pages/compane";
 import WishlistPage from "./Customer-Panal/pages/wishlistPage";
 import MyWallletPage from "./Customer-Panal/pages/myWallet";
+import PurchaseHistoryPage from "./Customer-Panal/pages/purchase/PurchaseHistoryPage";
+import DownloadPage from "./Customer-Panal/pages/download/DownloadPage";
+import DashbordCard from "./Customer-Panal/components/dashbord/DashbordCard";
+import SendRefundPage from "./Customer-Panal/pages/sent-refund-request/Index";
 
 function App() {
   const [show, setshow] = useState(true);
@@ -76,8 +76,12 @@ function App() {
           <Route path="pament-withdrow" element={<MoneyWithdrowPage />} />
         </Route>
         <Route path='/customer' element={<DashbordCustomer />}>
+          <Route path="purchase_history" element={<PurchaseHistoryPage />} />
+          <Route path="" element={<DashbordCard />} />
+          <Route path="digital_purchase_history" element={<DownloadPage />} />
           {/* <Route path="compare" element={<ComparePage />} /> */}
           <Route path="wishlists" element={<WishlistPage />} />
+          <Route path="sent-refund-request" element={<SendRefundPage />} />
           <Route path="wallet" element={<MyWallletPage />} />
         </Route>
       </Routes>
