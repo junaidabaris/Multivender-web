@@ -38,6 +38,7 @@ import ConversationsPage from './venderFile/vender-page/conversations';
 import ProductQuerriesPage from './venderFile/vender-page/productQuerries';
 import SupportTicketPage from './venderFile/vender-page/supportTicket';
 import CommissionHistoryPage from './venderFile/vender-page/comissionHistory/Index';
+import MoneyWithdrowPage from "./venderFile/vender-page/venderMoneyWithdrow/Index";
 
 function App() {
   const [show, setshow] = useState(true);
@@ -68,6 +69,7 @@ function App() {
           <Route path={'conversations'} element={<ConversationsPage />} />
           <Route path={'product-queries'} element={<ProductQuerriesPage />} />
           <Route path={'support-ticket'} element={<SupportTicketPage />} />
+          <Route path="pament-withdrow" element={<MoneyWithdrowPage/>}/>
         </Route>
       </Routes>
       {show && <Footer />}
