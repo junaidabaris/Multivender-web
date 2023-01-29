@@ -38,6 +38,7 @@ import MoneyWithdrowPage from "./venderFile/vender-page/venderMoneyWithdrow/Inde
 import DashbordCustomer from "./Customer-Panal/pages/dashbord/Index";
 import DashbordCard from "./Customer-Panal/components/dashbord/DashbordCard";
 import SendRefundPage from "./Customer-Panal/pages/sent-refund-request/Index";
+import OrderDetailPage from "./venderFile/vender-page/orderDetail/Index";
 
 function App() {
   const [show, setshow] = useState(true);
@@ -45,7 +46,7 @@ function App() {
     <>
       {show && <Header />}
       <Routes>
-        <Route path='/' element={<Navigate to="/home" />} />
+        <Route path='/' element={<Navigate to="/seller" />} />
         <Route path='/home' element={<HomePage />} />
         <Route path='*' element={<Navigate to="/page-not-found" />} />
         <Route path='page-not-found' element={<PageNotFoundPage />} />
@@ -69,6 +70,7 @@ function App() {
           <Route path={'product-queries'} element={<ProductQuerriesPage />} />
           <Route path={'support-ticket'} element={<SupportTicketPage />} />
           <Route path="pament-withdrow" element={<MoneyWithdrowPage />} />
+          <Route path="order-details" element={<OrderDetailPage />} />
         </Route>
         <Route path='/customer' element={<DashbordCustomer />}>
             <Route path="" element={<DashbordCard/>}/>
