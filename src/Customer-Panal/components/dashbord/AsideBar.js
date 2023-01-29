@@ -1,11 +1,11 @@
-import { Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 
 function AsideBar() {
     return <div className="aiz-user-sidenav-wrap position-relative z-1 shadow-sm">
         <div className="aiz-user-sidenav rounded overflow-auto c-scrollbar-light pb-5 pb-xl-0">
             <div className="p-4 text-xl-center mb-4 border-bottom bg-primary text-white position-relative lastWork">
                 <span className="avatar avatar-md mb-3">
-                    <img src="https://mmslfashions.in/public/assets/img/avatar-place.png" className="image rounded-circle"  />
+                    <img src="https://mmslfashions.in/public/assets/img/avatar-place.png" className="image rounded-circle" />
                 </span>
                 <h4 className="h5 fs-16 mb-1 fw-600">Azharuddin Shamim</h4>
                 <div className="text-truncate opacity-60">+91-8920073535</div>
@@ -23,14 +23,14 @@ function AsideBar() {
 
 
                     <li className="aiz-side-nav-item">
-                        <Link to="#" className="aiz-side-nav-link" aria-expanded="true">
+                        <Link to="purchase_history" className="aiz-side-nav-link" aria-expanded="true">
                             <i className="las la-file-alt aiz-side-nav-icon"></i>
                             <span className="aiz-side-nav-text">Purchase History</span>
                         </Link>
                     </li>
 
                     <li className="aiz-side-nav-item">
-                        <Link to="#" className="aiz-side-nav-link ">
+                        <Link to="digital_purchase_history" className="aiz-side-nav-link ">
                             <i className="las la-download aiz-side-nav-icon"></i>
                             <span className="aiz-side-nav-text">Downloads</span>
                         </Link>
@@ -44,14 +44,14 @@ function AsideBar() {
                     </li>
 
                     <li className="aiz-side-nav-item">
-                        <Link to="#" className="aiz-side-nav-link ">
+                        <Link to="wishlists" className="aiz-side-nav-link ">
                             <i className="la la-heart-o aiz-side-nav-icon"></i>
                             <span className="aiz-side-nav-text">Wishlist</span>
                         </Link>
                     </li>
 
                     <li className="aiz-side-nav-item">
-                        <Link to="#" className="aiz-side-nav-link ">
+                        <Link to="compare" className="aiz-side-nav-link ">
                             <i className="la la-refresh aiz-side-nav-icon"></i>
                             <span className="aiz-side-nav-text">Compare</span>
                         </Link>
@@ -87,7 +87,7 @@ function AsideBar() {
 
 
                     <li className="aiz-side-nav-item">
-                        <Link to="#" className="aiz-side-nav-link ">
+                        <Link to="wallet" className="aiz-side-nav-link ">
                             <i className="las la-dollar-sign aiz-side-nav-icon"></i>
                             <span className="aiz-side-nav-text">My Wallet</span>
                         </Link>

@@ -36,6 +36,11 @@ import SupportTicketPage from './venderFile/vender-page/supportTicket';
 import CommissionHistoryPage from './venderFile/vender-page/comissionHistory/Index';
 import MoneyWithdrowPage from "./venderFile/vender-page/venderMoneyWithdrow/Index";
 import DashbordCustomer from "./Customer-Panal/pages/dashbord/Index";
+import ComparePage from "./Customer-Panal/pages/compane";
+import WishlistPage from "./Customer-Panal/pages/wishlistPage";
+import MyWallletPage from "./Customer-Panal/pages/myWallet";
+import PurchaseHistoryPage from "./Customer-Panal/pages/purchase/PurchaseHistoryPage";
+import DownloadPage from "./Customer-Panal/pages/download/DownloadPage";
 import DashbordCard from "./Customer-Panal/components/dashbord/DashbordCard";
 import SendRefundPage from "./Customer-Panal/pages/sent-refund-request/Index";
 import OrderDetailPage from "./venderFile/vender-page/orderDetail/Index";
@@ -48,12 +53,13 @@ function App() {
       <Routes>
         <Route path='/' element={<Navigate to="/seller" />} />
         <Route path='/home' element={<HomePage />} />
+
         <Route path='*' element={<Navigate to="/page-not-found" />} />
         <Route path='page-not-found' element={<PageNotFoundPage />} />
         <Route path='/products' element={<ProductsPage />} />
         <Route path='/product-detail' element={<ProductDetailPage />} />
-        <Route path='/viewAllBrand' element={<ViewAllBrandPage />} />
-        <Route path='/seller' element={<MainVender setshow={setshow} />}>
+        <Route path='/viewAllBrand' element={<ViewAllBrandPage />} /> */}
+        <Route path='/home/seller' element={<MainVender setshow={setshow} />}>
           <Route path='' element={<DashbordPage />} />
           <Route path='uploads' element={<UploadedFilesPage />} />
           <Route path='coupon' element={<CouponsPage />} />
@@ -73,8 +79,13 @@ function App() {
           <Route path="order-details" element={<OrderDetailPage />} />
         </Route>
         <Route path='/customer' element={<DashbordCustomer />}>
-            <Route path="" element={<DashbordCard/>}/>
-            <Route path="sent-refund-request" element={<SendRefundPage/>}/>
+          <Route path="purchase_history" element={<PurchaseHistoryPage />} />
+          <Route path="" element={<DashbordCard />} />
+          <Route path="digital_purchase_history" element={<DownloadPage />} />
+          {/* <Route path="compare" element={<ComparePage />} /> */}
+          <Route path="wishlists" element={<WishlistPage />} />
+          <Route path="sent-refund-request" element={<SendRefundPage />} />
+          <Route path="wallet" element={<MyWallletPage />} />
         </Route>
       </Routes>
       {show && <Footer />}
