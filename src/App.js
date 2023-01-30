@@ -43,6 +43,10 @@ import PurchaseHistoryPage from "./Customer-Panal/pages/purchase/PurchaseHistory
 import DownloadPage from "./Customer-Panal/pages/download/DownloadPage";
 import DashbordCard from "./Customer-Panal/components/dashbord/DashbordCard";
 import SendRefundPage from "./Customer-Panal/pages/sent-refund-request/Index";
+import AffiliateSystemPage from "./Customer-Panal/pages/affiliateSystem";
+import PaymentHistoryPage from "./Customer-Panal/pages/paymentHistory";
+import WithDrawRequestHistory from "./Customer-Panal/pages/withdrawRequestHistory";
+import AffiliateUserSetting from "./Customer-Panal/pages/affiliateUserSetting";
 
 function App() {
   const [show, setshow] = useState(true);
@@ -83,11 +87,15 @@ function App() {
           <Route path="wishlists" element={<WishlistPage />} />
           <Route path="sent-refund-request" element={<SendRefundPage />} />
           <Route path="wallet" element={<MyWallletPage />} />
+          {/* <Route path="support-ticket" element={<SupportTicketPage />}/> */}
+          <Route path="affiliate/user" element={<AffiliateSystemPage />} />
+          <Route path="affiliate/payment/settings" element={<AffiliateUserSetting />} />
+          <Route path="user/payment_history" element={<PaymentHistoryPage />} />
+          <Route path="user/withdraw_request_history" element={<WithDrawRequestHistory />} />
         </Route>
       </Routes>
       {show && <Footer />}
     </>
   );
 }
-
 export default App;
