@@ -96,7 +96,7 @@ function App() {
             <Route path="wallet" element={<WalletPage/>}/>
             <Route path="earning-points" element={<EarningPointPage/>}/>
             <Route path="profile" element={<ManegeProfilePage/>}/>
-          <Route path="wallet" element={<MyWallletPage />} />
+          {/* <Route path="wallet" element={<MyWallletPage />} /> */}
           {/* <Route path="support-ticket" element={<SupportTicketPage />}/> */}
           <Route path="affiliate/user" element={<AffiliateSystemPage />} />
           <Route path="affiliate/payment/settings" element={<AffiliateUserSetting />} />
