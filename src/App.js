@@ -38,12 +38,15 @@ import MoneyWithdrowPage from "./venderFile/vender-page/venderMoneyWithdrow/Inde
 import DashbordCustomer from "./Customer-Panal/pages/dashbord/Index";
 import ComparePage from "./Customer-Panal/pages/compane";
 import WishlistPage from "./Customer-Panal/pages/wishlistPage";
-import MyWallletPage from "./Customer-Panal/pages/myWallet";
+
 import PurchaseHistoryPage from "./Customer-Panal/pages/purchase/PurchaseHistoryPage";
 import DownloadPage from "./Customer-Panal/pages/download/DownloadPage";
 import DashbordCard from "./Customer-Panal/components/dashbord/DashbordCard";
 import SendRefundPage from "./Customer-Panal/pages/sent-refund-request/Index";
+import WalletPage from "./Customer-Panal/pages/wallet/WalletPage";
+import EarningPointPage from "./Customer-Panal/pages/earning-point/EarningPointPage";
 import OrderDetailPage from "./venderFile/vender-page/orderDetail/Index";
+import ManegeProfilePage from "./Customer-Panal/pages/manegeProfile/ManegeProfilePage";
 import AffiliateSystemPage from "./Customer-Panal/pages/affiliateSystem";
 import WithDrawRequestHistory from "./Customer-Panal/pages/withdrawRequestHistory";
 import AffiliateUserSetting from "./Customer-Panal/pages/affiliateUserSetting";
@@ -90,7 +93,10 @@ function App() {
           {/* <Route path="compare" element={<ComparePage />} /> */}
           <Route path="wishlists" element={<WishlistPage />} />
           <Route path="sent-refund-request" element={<SendRefundPage />} />
-          <Route path="wallet" element={<MyWallletPage />} />
+            <Route path="wallet" element={<WalletPage/>}/>
+            <Route path="earning-points" element={<EarningPointPage/>}/>
+            <Route path="profile" element={<ManegeProfilePage/>}/>
+          {/* <Route path="wallet" element={<MyWallletPage />} /> */}
           {/* <Route path="support-ticket" element={<SupportTicketPage />}/> */}
           <Route path="affiliate/user" element={<AffiliateSystemPage />} />
           <Route path="affiliate/payment/settings" element={<AffiliateUserSetting />} />
