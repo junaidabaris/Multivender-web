@@ -40,6 +40,8 @@ import PurchaseHistoryPage from "./Customer-Panal/pages/purchase/PurchaseHistory
 import DownloadPage from "./Customer-Panal/pages/download/DownloadPage";
 import DashbordCard from "./Customer-Panal/components/dashbord/DashbordCard";
 import SendRefundPage from "./Customer-Panal/pages/sent-refund-request/Index";
+import WalletPage from "./Customer-Panal/pages/wallet/WalletPage";
+import EarningPointPage from "./Customer-Panal/pages/earning-point/EarningPointPage";
 
 function App() {
   const [show, setshow] = useState(true);
@@ -77,6 +79,8 @@ function App() {
             <Route path="" element={<DashbordCard/>}/>
             <Route path="digital_purchase_history" element={<DownloadPage/>}/>
             <Route path="sent-refund-request" element={<SendRefundPage/>}/>
+            <Route path="wallet" element={<WalletPage/>}/>
+            <Route path="earning-points" element={<EarningPointPage/>}/>
         </Route>
       </Routes>
       {show && <Footer />}
