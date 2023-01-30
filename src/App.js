@@ -47,6 +47,11 @@ import WalletPage from "./Customer-Panal/pages/wallet/WalletPage";
 import EarningPointPage from "./Customer-Panal/pages/earning-point/EarningPointPage";
 import OrderDetailPage from "./venderFile/vender-page/orderDetail/Index";
 import ManegeProfilePage from "./Customer-Panal/pages/manegeProfile/ManegeProfilePage";
+import AffiliateSystemPage from "./Customer-Panal/pages/affiliateSystem";
+import WithDrawRequestHistory from "./Customer-Panal/pages/withdrawRequestHistory";
+import AffiliateUserSetting from "./Customer-Panal/pages/affiliateUserSetting";
+import PaymentHistoryPage from "./Customer-Panal/pages/paymentHistory";
+
 
 function App() {
   const [show, setshow] = useState(true);
@@ -91,11 +96,16 @@ function App() {
             <Route path="wallet" element={<WalletPage/>}/>
             <Route path="earning-points" element={<EarningPointPage/>}/>
             <Route path="profile" element={<ManegeProfilePage/>}/>
+          <Route path="wallet" element={<MyWallletPage />} />
+          {/* <Route path="support-ticket" element={<SupportTicketPage />}/> */}
+          <Route path="affiliate/user" element={<AffiliateSystemPage />} />
+          <Route path="affiliate/payment/settings" element={<AffiliateUserSetting />} />
+          <Route path="user/payment_history" element={<PaymentHistoryPage />} />
+          <Route path="user/withdraw_request_history" element={<WithDrawRequestHistory />} />
         </Route>
       </Routes>
       {show && <Footer />}
     </>
   );
 }
-
 export default App;
