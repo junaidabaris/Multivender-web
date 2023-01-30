@@ -9286,3 +9286,12 @@ Buy Now Btn
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+.aiz-sidebar-wrap .aiz-sidebar {
+  position: relative;
+}
+.aiz-sidebar-wrap .aiz-sidebar .cancel-side-bar{
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
