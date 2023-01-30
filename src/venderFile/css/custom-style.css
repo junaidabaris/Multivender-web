@@ -103,10 +103,17 @@
     display: block;
 }
 .modal-content{
-    width: 750px;
+    width: 1000px;
+    margin-left: -190px;
 }
 
 
+@media only screen and (max-width: 600px) {
+    .modal-content{
+        width:auto;
+        margin-left:0px;
+    }
+  }
 
 
 

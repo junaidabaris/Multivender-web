@@ -289,6 +289,8 @@ function ProductItem() {
       </div>
 
 
+
+
       <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div className="modal-dialog">
           <div className="modal-content">
@@ -300,9 +302,7 @@ function ProductItem() {
               <div>
                 <section id="services" className="services section-bg">
                   <div className="container-fluid">
-                    <div className="col-sm-12 text-center mb-4">
-                      <a className="btn btn-primary" target="_blank" href="http://paypal.me/skd1996"> Donate Now <i className="fa fa-dollar"></i></a>
-                    </div>
+                  
                     <div className="row row-sm">
                       <div className="col-md-6 _boxzoom">
                         <img src={fertilizer6} />
@@ -334,21 +334,6 @@ function ProductItem() {
                               Type: General Pleat
                               Applicable Window Type: Flat Window
                               Format: Rope
-                              Opening and Closing Method: Left and Right Biparting Open
-                              Processing Accessories Cost: Included
-                              Installation Type: Built-in
-                              Function: High Shading(70%-90%)
-                              Material: Polyester / Cotton
-                              Style: Classic
-                              Pattern: Embroidered
-                              Location: Window
-                              Technics: Woven
-                              Use: Home, Hotel, Hospital, Cafe, Office
-                              Feature: Blackout, Insulated, Flame Retardant
-                              Place of Origin: India
-                              Name: Curtain
-                              Usage: Window Decoration
-                              Keywords: Ready Made Blackout Curtain
                             </div>
                             <form action="" method="post" acceptCharset="utf-8">
                               <ul className="spe_ul"></ul>
