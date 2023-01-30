@@ -9295,3 +9295,17 @@ Buy Now Btn
   right: 10px;
   top: 15px;
 }
+
+.form-group .btn-primary {
+  background-color: #124a2f;
+    border-color: #ffffff;
+    color: var(--white);
+}
+.form-group .btn-primary:hover {
+  background-color: #e62e04 !important;
+    border-color: #e62e04 !important;
+}
+/* .modle-modle {
+  width: 500px !important;
+  margin-left: ;
+} */

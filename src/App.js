@@ -38,7 +38,7 @@ import MoneyWithdrowPage from "./venderFile/vender-page/venderMoneyWithdrow/Inde
 import DashbordCustomer from "./Customer-Panal/pages/dashbord/Index";
 import ComparePage from "./Customer-Panal/pages/compane";
 import WishlistPage from "./Customer-Panal/pages/wishlistPage";
-import MyWallletPage from "./Customer-Panal/pages/myWallet";
+
 import PurchaseHistoryPage from "./Customer-Panal/pages/purchase/PurchaseHistoryPage";
 import DownloadPage from "./Customer-Panal/pages/download/DownloadPage";
 import DashbordCard from "./Customer-Panal/components/dashbord/DashbordCard";
@@ -46,6 +46,7 @@ import SendRefundPage from "./Customer-Panal/pages/sent-refund-request/Index";
 import WalletPage from "./Customer-Panal/pages/wallet/WalletPage";
 import EarningPointPage from "./Customer-Panal/pages/earning-point/EarningPointPage";
 import OrderDetailPage from "./venderFile/vender-page/orderDetail/Index";
+import ManegeProfilePage from "./Customer-Panal/pages/manegeProfile/ManegeProfilePage";
 
 function App() {
   const [show, setshow] = useState(true);
@@ -60,7 +61,7 @@ function App() {
         <Route path='page-not-found' element={<PageNotFoundPage />} />
         <Route path='/products' element={<ProductsPage />} />
         <Route path='/product-detail' element={<ProductDetailPage />} />
-        <Route path='/viewAllBrand' element={<ViewAllBrandPage />} /> */}
+        <Route path='/viewAllBrand' element={<ViewAllBrandPage />} />
         <Route path='/home/seller' element={<MainVender setshow={setshow} />}>
           <Route path='' element={<DashbordPage />} />
           <Route path='uploads' element={<UploadedFilesPage />} />
@@ -87,9 +88,9 @@ function App() {
           {/* <Route path="compare" element={<ComparePage />} /> */}
           <Route path="wishlists" element={<WishlistPage />} />
           <Route path="sent-refund-request" element={<SendRefundPage />} />
-          <Route path="wallet" element={<MyWallletPage />} />
             <Route path="wallet" element={<WalletPage/>}/>
             <Route path="earning-points" element={<EarningPointPage/>}/>
+            <Route path="profile" element={<ManegeProfilePage/>}/>
         </Route>
       </Routes>
       {show && <Footer />}

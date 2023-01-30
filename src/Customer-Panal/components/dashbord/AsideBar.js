@@ -146,7 +146,7 @@ function AsideBar() {
               </Link>
             </li>
             <li className="aiz-side-nav-item">
-              <Link to="#" className="aiz-side-nav-link ">
+              <Link to="profile" className="aiz-side-nav-link ">
                 <i className="las la-user aiz-side-nav-icon"></i>
                 <span className="aiz-side-nav-text">Manage Profile</span>
               </Link>
