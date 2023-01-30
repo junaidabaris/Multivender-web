@@ -43,14 +43,13 @@ import PurchaseHistoryPage from "./Customer-Panal/pages/purchase/PurchaseHistory
 import DownloadPage from "./Customer-Panal/pages/download/DownloadPage";
 import DashbordCard from "./Customer-Panal/components/dashbord/DashbordCard";
 import SendRefundPage from "./Customer-Panal/pages/sent-refund-request/Index";
-<<<<<<< HEAD
+
 import AffiliateSystemPage from "./Customer-Panal/pages/affiliateSystem";
 import PaymentHistoryPage from "./Customer-Panal/pages/paymentHistory";
 import WithDrawRequestHistory from "./Customer-Panal/pages/withdrawRequestHistory";
 import AffiliateUserSetting from "./Customer-Panal/pages/affiliateUserSetting";
-=======
 import OrderDetailPage from "./venderFile/vender-page/orderDetail/Index";
->>>>>>> ebe04a334581329cb3c6c880f35ea4eabcda6f49
+
 
 function App() {
   const [show, setshow] = useState(true);
@@ -65,7 +64,7 @@ function App() {
         <Route path='page-not-found' element={<PageNotFoundPage />} />
         <Route path='/products' element={<ProductsPage />} />
         <Route path='/product-detail' element={<ProductDetailPage />} />
-        <Route path='/viewAllBrand' element={<ViewAllBrandPage />} /> */}
+        <Route path='/viewAllBrand' element={<ViewAllBrandPage />} />
         <Route path='/home/seller' element={<MainVender setshow={setshow} />}>
           <Route path='' element={<DashbordPage />} />
           <Route path='uploads' element={<UploadedFilesPage />} />
