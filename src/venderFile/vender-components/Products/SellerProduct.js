@@ -3,17 +3,17 @@ import { Link } from "react-router-dom"
 import TableRows from "./TableRows"
 
 function SellerProduct() {
-    const [state , setState] = useState(false)
-    const [value , setValue] = useState(false)
+    const [state, setState] = useState(false)
+    const [value, setValue] = useState(false)
 
-    const chengeStatus = ()=>{
+    const chengeStatus = () => {
         setState(!state)
     }
-    const chengeStatusProduct = ()=>{
+    const chengeStatusProduct = () => {
         setValue(!value)
     }
 
-    const showModle = ()=>{
+    const showModle = () => {
         alert("ssss")
     }
 
@@ -93,11 +93,11 @@ function SellerProduct() {
                         </thead>
 
                         <tbody>
-                            
-                            <TableRows val={state} chengeStatus={chengeStatus} val2={value} chengeStatusProduct={chengeStatusProduct} showModle={showModle}/>
-                            <TableRows val={state} chengeStatus={chengeStatus} val2={value} chengeStatusProduct={chengeStatusProduct} showModle={showModle}/>
-                            <TableRows val={state} chengeStatus={chengeStatus} val2={value} chengeStatusProduct={chengeStatusProduct} showModle={showModle}/>
-                            <TableRows val={state} chengeStatus={chengeStatus} val2={value} chengeStatusProduct={chengeStatusProduct} showModle={showModle}/>
+
+                            <TableRows val={state} chengeStatus={chengeStatus} val2={value} chengeStatusProduct={chengeStatusProduct} showModle={showModle} />
+                            <TableRows val={state} chengeStatus={chengeStatus} val2={value} chengeStatusProduct={chengeStatusProduct} showModle={showModle} />
+                            <TableRows val={state} chengeStatus={chengeStatus} val2={value} chengeStatusProduct={chengeStatusProduct} showModle={showModle} />
+                            <TableRows val={state} chengeStatus={chengeStatus} val2={value} chengeStatusProduct={chengeStatusProduct} showModle={showModle} />
                         </tbody>
                     </table>
                     <div className="aiz-pagination">

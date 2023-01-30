@@ -1,13 +1,17 @@
 import { useState } from "react"
 import { Link, NavLink } from "react-router-dom"
+import { ImCross } from 'react-icons/im'
 
-function AsideSeller() {
+function AsideSeller({isActive, handleAsidebar}) {
     const [state, setState] = useState(false)
     const [pacage, setStatePacage] = useState(false)
 
 
     return <div className="aiz-sidebar-wrap">
-        <div className="aiz-sidebar left c-scrollbar">
+        <div className={`aiz-sidebar left c-scrollbar ${isActive ? "active": ""} `}>
+            <div className="cancel-side-bar">
+                <ImCross onClick={handleAsidebar} />
+            </div>
             <div className="aiz-side-nav-logo-wrap">
                 <div className="d-block text-center my-3">
                     <img className="mw-100 mb-3 brand-icon"

@@ -1,4 +1,10 @@
+import { Link, useNavigate } from "react-router-dom";
+
 function VenderOrder() {
+  const navigate = useNavigate()
+  const detailPage = () => {
+    navigate("/seller/order-details")
+  }
   return (
     <>
       <div className="aiz-main-content">
@@ -26,7 +32,7 @@ function VenderOrder() {
                     className="form-control aiz-selectpicker"
                     data-placeholder="Filter by Payment Status"
                     name="delivery_status"
-                    // onchange="sort_orders()"
+                  // onchange="sort_orders()"
                   >
                     <option value="">Filter by Deliver Status</option>
                     <option value="pending">Pending</option>
@@ -64,7 +70,7 @@ function VenderOrder() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  <tr onClick={detailPage}>
                     <td>1</td>
                     <td>
                       <a
@@ -99,12 +105,13 @@ function VenderOrder() {
                       </a>
                     </td>
                   </tr>
-                  <tr>
+                  <tr onClick={detailPage}>
+
                     <td>2</td>
                     <td>
                       <a
                         href="#20221006-19574683"
-                        
+
                       >
                         20221006-19574683
                       </a>
