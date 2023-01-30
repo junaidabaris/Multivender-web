@@ -3,6 +3,7 @@ import { Link, Outlet } from "react-router-dom"
 
 function AsideBar() {
     const [state, setState] = useState(false)
+    const [auction,setAution] = useState(false)
 
 
   return (
@@ -80,12 +81,12 @@ function AsideBar() {
                             </li>
 
                             <li className="aiz-side-nav-item">
-                                <Link to="#" className="aiz-side-nav-link" onClick={() => { setState(!state) }}>
+                                <Link to="#" className="aiz-side-nav-link" onClick={() => { setAution(!auction) }}>
                                     <i className="las la-gavel aiz-side-nav-icon"></i>
                                     <span className="aiz-side-nav-text">Auction</span>
                                     <span className="aiz-side-nav-arrow"></span>
                                 </Link>
-                                <ul className={`aiz-side-nav-list level-2 mm-collapse ${state ? "mm-show" : "extra"}`} id="product">
+                                <ul className={`aiz-side-nav-list level-2 mm-collapse ${auction ? "mm-show" : "extra"}`} id="product">
                                     <li className="aiz-side-nav-item">
                                         <Link to="#" className="aiz-side-nav-link">
                                             <span className="aiz-side-nav-text">Bidded Products</span>
@@ -121,24 +122,24 @@ function AsideBar() {
                     </li>
 
             <li className="aiz-side-nav-item">
-              <Link to="#" className="aiz-side-nav-link ">
+              <Link to="#" className="aiz-side-nav-link"  onClick={() => { setState(!state) }}>
                 <i className="las la-dollar-sign aiz-side-nav-icon"></i>
                 <span className="aiz-side-nav-text">Affiliate</span>
                 <span className="aiz-side-nav-arrow"></span>
               </Link>
-              <ul className="aiz-side-nav-list level-2 mm-collapse">
+              <ul className={`aiz-side-nav-list level-2 mm-collapse ${state ? "mm-show" : "extra"}`} id="product">
                 <li className="aiz-side-nav-item">
-                  <Link to="#" className="aiz-side-nav-link">
+                  <Link to="affiliate/user" className="aiz-side-nav-link">
                     <span className="aiz-side-nav-text">Affiliate System</span>
                   </Link>
                 </li>
                 <li className="aiz-side-nav-item">
-                  <Link to="#" className="aiz-side-nav-link">
+                  <Link to="user/payment_history" className="aiz-side-nav-link">
                     <span className="aiz-side-nav-text">Payment History</span>
                   </Link>
                 </li>
                 <li className="aiz-side-nav-item">
-                  <Link to="#" className="aiz-side-nav-link">
+                  <Link to="user/withdraw_request_history" className="aiz-side-nav-link">
                     <span className="aiz-side-nav-text">
                       Withdraw Request history
                     </span>
