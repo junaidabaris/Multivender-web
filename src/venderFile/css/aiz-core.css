@@ -13762,7 +13762,17 @@ input[type="number"] {
         right: -265px;
     }
 }
-
+.cancel-side-bar{
+    display: none;
+}
+@media (max-width: 767px) {
+    .aiz-sidebar.left.c-scrollbar.active {
+        left: 0;
+    }
+    .cancel-side-bar{
+        display: block;
+    }
+}
 /*dropdown*/
 .dropdown-toggle {
     display: -ms-flexbox;
