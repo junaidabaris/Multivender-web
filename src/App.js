@@ -51,6 +51,10 @@ import AffiliateSystemPage from "./Customer-Panal/pages/affiliateSystem";
 import WithDrawRequestHistory from "./Customer-Panal/pages/withdrawRequestHistory";
 import AffiliateUserSetting from "./Customer-Panal/pages/affiliateUserSetting";
 import PaymentHistoryPage from "./Customer-Panal/pages/paymentHistory";
+import CustomerSupportTicketPage from "./Customer-Panal/pages/customerSupportTicketPage";
+import DashboardAdmin from "./Admin-pannel/Pages/dashboardRightSection";
+import DashboardRightSectionAdmin from "./Admin-pannel/Pages/dashboardRightSection";
+import DashboardAdminPage from "./Admin-pannel/Pages/dashboardPage";
 
 
 function App() {
@@ -95,11 +99,15 @@ function App() {
           <Route path="wishlists" element={<WishlistPage />} />
           <Route path="sent-refund-request" element={<SendRefundPage />} />
           {/* <Route path="wallet" element={<MyWallletPage />} /> */}
-          <Route path="support-ticket" element={<SupportTicketPage />}/>
+          {/* <Route path="support-ticket" element={<SupportTicketPage />} /> */}
           <Route path="affiliate/user" element={<AffiliateSystemPage />} />
           <Route path="affiliate/payment/settings" element={<AffiliateUserSetting />} />
           <Route path="user/payment_history" element={<PaymentHistoryPage />} />
           <Route path="user/withdraw_request_history" element={<WithDrawRequestHistory />} />
+          <Route path="support-tiket" element={<CustomerSupportTicketPage />} />
+        </Route>
+        <Route path="/admin" element={<DashboardRightSectionAdmin setshow={setshow} />}>
+            <Route path="" element={<DashboardAdminPage />}/>
         </Route>
       </Routes>
       {show && <Footer />}

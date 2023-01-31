@@ -45,7 +45,6 @@ function SupprotTicket() {
                     </div>
                 </div>
             </div>
-
         </>
     )
 }

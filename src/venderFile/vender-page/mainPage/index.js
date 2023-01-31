@@ -15,6 +15,7 @@ function MainVender({ setshow }) {
     useEffect(() => {
         setshow(false)
     }, [])
+    
     return <>
         <div className="aiz-main-wrapper">
             <AsideSeller isActive={isActive} handleAsidebar={handleAsidebar} />
