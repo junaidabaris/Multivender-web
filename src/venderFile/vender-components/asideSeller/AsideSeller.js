@@ -17,8 +17,8 @@ function AsideSeller({ isActive, handleAsidebar }) {
                     <img className="mw-100 mb-3 brand-icon"
                         src="https://mmslfashions.in/public/uploads/all/J3IHQMPrIal220S890WP4kxP1shTCJytvopboZrL.png"
                         alt="" />
-                    <h3 className="fs-16  m-0 text-primary">Abaris Products</h3>
-                    <p className="text-primary">abarisproducts@gmail.com</p>
+                    <h3 className="fs-16  m-0 text-primary">Demo Seller</h3>
+                    <p className="text-primary">demoseller@mail.com</p>
                 </div>
             </div>
             <div className="aiz-side-nav-wrap">
@@ -184,6 +184,19 @@ function AsideSeller({ isActive, handleAsidebar }) {
                             <span className="aiz-side-nav-text">Support Ticket</span>
                         </NavLink>
                     </li>
+
+                    {/* <li className="aiz-side-nav-item">
+                        <NavLink to="pament-withdrow" className="aiz-side-nav-link ">
+                            <i className="las la-atom aiz-side-nav-icon"></i>
+                            <span className="aiz-side-nav-text">Payment Withdraw</span>
+                        </NavLink>
+                    </li>
+                    <li className="aiz-side-nav-item">
+                        <NavLink to="order-details" className="aiz-side-nav-link ">
+                            <i className="las la-atom aiz-side-nav-icon"></i>
+                            <span className="aiz-side-nav-text">Order Detail</span>
+                        </NavLink>
+                    </li> */}
 
                 </ul>
             </div>

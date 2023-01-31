@@ -52,6 +52,7 @@ import PaymentHistoryPage from "./Customer-Panal/pages/paymentHistory";
 
 function App() {
   const [show, setshow] = useState(true);
+
   return (
     <>
       {show && <Header />}
@@ -64,7 +65,7 @@ function App() {
         <Route path='/products' element={<ProductsPage />} />
         <Route path='/product-detail' element={<ProductDetailPage />} />
         <Route path='/viewAllBrand' element={<ViewAllBrandPage />} />
-        <Route path='/home/seller' element={<MainVender setshow={setshow} />}>
+        <Route path='/seller' element={<MainVender setshow={setshow} />}>
           <Route path='' element={<DashbordPage />} />
           <Route path='uploads' element={<UploadedFilesPage />} />
           <Route path='coupon' element={<CouponsPage />} />
@@ -77,11 +78,11 @@ function App() {
           <Route path='sellerProducts' element={<SellerProducts />} />
           <Route path='product-bulk-upload' element={<ProductBulkPage />} />
           <Route path='digitalproducts' element={<Digitalproducts />} />
-          <Route path={'conversations'} element={<ConversationsPage />} />
-          <Route path={'product-queries'} element={<ProductQuerriesPage />} />
-          <Route path={'support-ticket'} element={<SupportTicketPage />} />
+          <Route path='conversations' element={<ConversationsPage />} />
+          <Route path='product-queries' element={<ProductQuerriesPage />} />
+          <Route path='support-ticket' element={<SupportTicketPage />} />
           <Route path="pament-withdrow" element={<MoneyWithdrowPage />} />
-          <Route path="order-details" element={<OrderDetailPage />} />
+          <Route path="orders/order-details" element={<OrderDetailPage />} />
         </Route>
         <Route path='/customer' element={<DashbordCustomer />}>
           <Route path="purchase_history" element={<PurchaseHistoryPage />} />
@@ -91,7 +92,7 @@ function App() {
           <Route path="wishlists" element={<WishlistPage />} />
           <Route path="sent-refund-request" element={<SendRefundPage />} />
           <Route path="wallet" element={<MyWallletPage />} />
-          {/* <Route path="support-ticket" element={<SupportTicketPage />}/> */}
+          <Route path="support-ticket" element={<SupportTicketPage />}/>
           <Route path="affiliate/user" element={<AffiliateSystemPage />} />
           <Route path="affiliate/payment/settings" element={<AffiliateUserSetting />} />
           <Route path="user/payment_history" element={<PaymentHistoryPage />} />
