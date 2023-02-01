@@ -107,7 +107,7 @@ function App() {
           <Route path="support-tiket" element={<CustomerSupportTicketPage />} />
         </Route>
         <Route path="/admin" element={<DashboardRightSectionAdmin setshow={setshow} />}>
-            <Route path="" element={<DashboardAdminPage />}/>
+          <Route path="" element={<DashboardAdminPage />} />
         </Route>
       </Routes>
       {show && <Footer />}
