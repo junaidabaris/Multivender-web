@@ -107,11 +107,16 @@ function App() {
           <Route path="user/payment_history" element={<PaymentHistoryPage />} />
           <Route path="user/withdraw_request_history" element={<WithDrawRequestHistory />} />
           <Route path="support-tiket" element={<CustomerSupportTicketPage />} />
+          {/* <Route path="compare" element={<ComparePage/>}/>  */}
+          <Route path="conversation" element={<ConversationPage/>}/>
+          <Route path="auction-purchase-history" element={<AuctionPurchaseHistoryPage/>}/>
+          <Route path="wallet" element={<WalletPage/>}/>
+          <Route path="earning-points" element={<EarningPointPage/>}/>
+          <Route path="profile" element={<ManegeProfilePage/>}/>
         </Route>
         <Route path="/admin" element={<DashboardRightSectionAdmin setshow={setshow} />}>
           <Route path="" element={<DashboardAdminPage />} />
-          <Route path="conversation" element={<ConversationPage/>}/>
-          <Route path="auction-purchase-history" element={<AuctionPurchaseHistoryPage/>}/>
+          
         </Route>
       </Routes>
       {show && <Footer />}
