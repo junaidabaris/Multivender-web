@@ -1,8 +1,8 @@
 import { useState } from "react"
 import { Link, NavLink } from "react-router-dom"
-import Accordion from 'react-bootstrap/Accordion';
+// import Accordion from 'react-bootstrap/Accordion';
 
-function AsideAdmin({ isActive, handleAsidebar }) {
+function AsideAdmin() {
 
     const [state, setState] = useState(false)
     const [products, setProducts] = useState(false)
@@ -21,7 +21,7 @@ function AsideAdmin({ isActive, handleAsidebar }) {
                 </div>
                 <div className="aiz-side-nav-wrap">
                     <div className="px-20px mb-3">
-                        <input className="form-control bg-soft-secondary border-0 form-control-sm text-white" type="text" name placeholder="Search in menu" id="menu-search" onKeyUp="menuSearch()" fdprocessedid="axe2ae" />
+                        <input className="form-control bg-soft-secondary border-0 form-control-sm text-white" type="text" placeholder="Search in menu" id="menu-search" fdprocessedid="axe2ae" />
                     </div>
                     <ul className="aiz-side-nav-list" id="search-menu">
                     </ul>
@@ -56,11 +56,9 @@ function AsideAdmin({ isActive, handleAsidebar }) {
                         </Accordion.Item>
                     </Accordion> */}
 
-
-
                     <ul className="aiz-side-nav-list metismenu" id="main-menu" data-toggle="aiz-side-menu">
                         <li className="aiz-side-nav-item mm-active">
-                            <Link href="https://mmslfashions.in/admin" className="aiz-side-nav-link active" aria-expanded="true">
+                            <Link to="#" className="aiz-side-nav-link active">
                                 <i className="las la-home aiz-side-nav-icon" />
                                 <span className="aiz-side-nav-text">Dashboard</span>
                             </Link>
@@ -74,12 +72,12 @@ function AsideAdmin({ isActive, handleAsidebar }) {
                             </Link>
                             <ul className={`aiz-side-nav-list level-2 mm-collapse ${state ? "mm-show" : "extra"}`} id="product">
                                 <li className="aiz-side-nav-item">
-                                    <NavLink to="https://mmslfashions.in/admin/pos" className="aiz-side-nav-link ">
+                                    <NavLink to="#" className="aiz-side-nav-link ">
                                         <span className="aiz-side-nav-text">POS Manager</span>
                                     </NavLink>
                                 </li>
                                 <li className="aiz-side-nav-item">
-                                    <NavLink href="https://mmslfashions.in/admin/pos-activation" className="aiz-side-nav-link">
+                                    <NavLink to="https://mmslfashions.in/admin/pos-activation" className="aiz-side-nav-link">
                                         <span className="aiz-side-nav-text">POS Configuration</span>
                                     </NavLink>
                                 </li>
@@ -95,22 +93,22 @@ function AsideAdmin({ isActive, handleAsidebar }) {
                             {/*Submenu*/}
                             <ul className={`aiz-side-nav-list level-2 mm-collapse ${products ? "mm-show" : "extra"}`} id="product">
                                 <li className="aiz-side-nav-item">
-                                    <Link className="aiz-side-nav-link" to="https://mmslfashions.in/admin/products/create">
+                                    <Link className="aiz-side-nav-link" to="#">
                                         <span className="aiz-side-nav-text">Add New Product</span>
                                     </Link>
                                 </li>
                                 <li className="aiz-side-nav-item">
-                                    <Link to="https://mmslfashions.in/admin/products/all" className="aiz-side-nav-link">
+                                    <Link to="#" className="aiz-side-nav-link">
                                         <span className="aiz-side-nav-text">All products</span>
                                     </Link>
                                 </li>
                                 <li className="aiz-side-nav-item">
-                                    <a href="https://mmslfashions.in/admin/products/admin" className="aiz-side-nav-link ">
+                                    <a href="#" className="aiz-side-nav-link ">
                                         <span className="aiz-side-nav-text">In House Products</span>
                                     </a>
                                 </li>
                                 <li className="aiz-side-nav-item">
-                                    <a href="https://mmslfashions.in/admin/products/seller" className="aiz-side-nav-link ">
+                                    <a href="#" className="aiz-side-nav-link ">
                                         <span className="aiz-side-nav-text">Seller Products</span>
                                     </a>
                                 </li>
