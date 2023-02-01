@@ -42,6 +42,16 @@ function AsideBar() {
                   <span className="aiz-side-nav-text">Purchase History</span>
                 </Link>
               </li>
+              <li className="aiz-side-nav-item">
+                <Link
+                  to="purchase_history"
+                  className="aiz-side-nav-link"
+                  aria-expanded="true"
+                >
+                  <i className="las la-file-alt aiz-side-nav-icon"></i>
+                  <span className="aiz-side-nav-text">Purchase History</span>
+                </Link>
+              </li>
 
               <li className="aiz-side-nav-item">
                 <Link
@@ -52,7 +62,22 @@ function AsideBar() {
                   <span className="aiz-side-nav-text">Downloads</span>
                 </Link>
               </li>
+              <li className="aiz-side-nav-item">
+                <Link
+                  to="digital_purchase_history"
+                  className="aiz-side-nav-link "
+                >
+                  <i className="las la-download aiz-side-nav-icon"></i>
+                  <span className="aiz-side-nav-text">Downloads</span>
+                </Link>
+              </li>
 
+              <li className="aiz-side-nav-item">
+                <Link to="sent-refund-request" className="aiz-side-nav-link ">
+                  <i className="las la-backward aiz-side-nav-icon"></i>
+                  <span className="aiz-side-nav-text">Sent Refund Request</span>
+                </Link>
+              </li>
               <li className="aiz-side-nav-item">
                 <Link to="sent-refund-request" className="aiz-side-nav-link ">
                   <i className="las la-backward aiz-side-nav-icon"></i>
@@ -120,6 +145,12 @@ function AsideBar() {
                   <span className="aiz-side-nav-text">My Wallet</span>
                 </Link>
               </li>
+              <li className="aiz-side-nav-item">
+                <Link to="wallet" className="aiz-side-nav-link ">
+                  <i className="las la-dollar-sign aiz-side-nav-icon"></i>
+                  <span className="aiz-side-nav-text">My Wallet</span>
+                </Link>
+              </li>
 
               <li className="aiz-side-nav-item">
                 <Link to="earning-points" className="aiz-side-nav-link ">
@@ -175,7 +206,7 @@ function AsideBar() {
               </li>
 
               <li className="aiz-side-nav-item">
-                <Link to="#" className="aiz-side-nav-link ">
+                <Link to="support-tiket" className="aiz-side-nav-link ">
                   <i className="las la-atom aiz-side-nav-icon"></i>
                   <span className="aiz-side-nav-text">Support Ticket</span>
                 </Link>
@@ -208,9 +239,11 @@ function AsideBar() {
             <i className="las la-times la-2x"></i>
           </button>
         </div>
-      </div>
+      </div >
       {/* <Outlet></Outlet> */}
+
     </>
   );
+    
 }
 export default AsideBar;

@@ -1,10 +1,10 @@
 import { Link, useNavigate } from "react-router-dom";
 
 function VenderOrder() {
-  const navigate = useNavigate()
-  const detailPage = () => {
-    navigate("/seller/order-details")
-  }
+  // const navigate = useNavigate()
+  // const detailPage = () => {
+  //   navigate("/seller/orders/order-details")
+  // }
   return (
     <>
       <div className="aiz-main-content">
@@ -70,7 +70,7 @@ function VenderOrder() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr onClick={detailPage}>
+                  <tr>
                     <td>1</td>
                     <td>
                       <a
@@ -89,13 +89,9 @@ function VenderOrder() {
                       </span>
                     </td>
                     <td className="text-right">
-                      <a
-                        href="https://mmslfashions.in/seller/orders/eyJpdiI6Im9CY1V2WDBBVTRzd2tXVVEzbkI1WkE9PSIsInZhbHVlIjoiOWFyeWNEWjBkamViK240aklqTVZwQT09IiwibWFjIjoiNGFjNzkxOWVlYTAxNzA5OTgwODY3YjUxYzgyZGEwMTdlYWZmMTI1YzI4YWM1OWY0NmFhYmU5MzI5NWYyMDY0NiIsInRhZyI6IiJ9"
-                        className="btn btn-soft-info btn-icon btn-circle btn-sm"
-                        title="Order Details"
-                      >
+                      <Link to="/seller/orders/order-details" className="btn btn-soft-info btn-icon btn-circle btn-sm" title="Order Details">
                         <i className="las la-eye"></i>
-                      </a>
+                      </Link>
                       <a
                         href="https://mmslfashions.in/seller/invoice/3"
                         className="btn btn-soft-warning btn-icon btn-circle btn-sm"
@@ -105,16 +101,10 @@ function VenderOrder() {
                       </a>
                     </td>
                   </tr>
-                  <tr onClick={detailPage}>
-
+                  <tr>
                     <td>2</td>
                     <td>
-                      <a
-                        href="#20221006-19574683"
-
-                      >
-                        20221006-19574683
-                      </a>
+                      <a href="#20221006-19574683">20221006-19574683</a>
                     </td>
                     <td>1</td>
                     <td>Azharuddin Shamim</td>
@@ -126,20 +116,12 @@ function VenderOrder() {
                       </span>
                     </td>
                     <td className="text-right">
-                      <a
-                        href="https://mmslfashions.in/seller/orders/eyJpdiI6IlNRdWJGNEJVOG1kb3VnYkdBOExuY1E9PSIsInZhbHVlIjoiUUNLWDN0YUJlamtwQTQ3MDhVMG5PQT09IiwibWFjIjoiNmQ2MWRhYmZkMThmNzJlNjZkYzM4YzZjMDkyMGI3OWEzNTg2ZjljZTAxNjU0ZTc4ZjhkMGFhMmI2MjM0ZDA3ZiIsInRhZyI6IiJ9"
-                        className="btn btn-soft-info btn-icon btn-circle btn-sm"
-                        title="Order Details"
-                      >
+                      <Link to="/seller/orders/order-details" className="btn btn-soft-info btn-icon btn-circle btn-sm" title="Order Details">
                         <i className="las la-eye"></i>
-                      </a>
-                      <a
-                        href="https://mmslfashions.in/seller/invoice/2"
-                        className="btn btn-soft-warning btn-icon btn-circle btn-sm"
-                        title="Download Invoice"
-                      >
+                      </Link>
+                      <Link to="https://mmslfashions.in/seller/invoice/2" className="btn btn-soft-warning btn-icon btn-circle btn-sm" title="Download Invoice">
                         <i className="las la-download"></i>
-                      </a>
+                      </Link>
                     </td>
                   </tr>
                 </tbody>

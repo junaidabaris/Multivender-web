@@ -15,9 +15,9 @@ function Footer() {
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12">
               <div className="aboutCompanyText">
-                <h3>About Company</h3>
+                <h3>About Seller</h3>
                 <p>
-                  India’s largest Agri Inputs Marketplace Platform providing
+                  Zambia's largest Agri Inputs Marketplace Platform providing
                   Agricultural Machinery, Agriculture Equipment, Agricultural
                   Products, Poultry Equipment, Chemical Pesticides, Organic
                   Insecticides, etc. Our clientele includes Farmers, Nurseries,
@@ -109,7 +109,7 @@ function Footer() {
                     <GoLocation />
                     <span>
                       <h3>Location</h3>
-                      2750 Quadra Street Victoria Road, <br /> New York, Canada
+                      2750 Quadra Street Victoria Road, <br /> Zambia
                     </span>
                   </div>
                 </div>
@@ -119,7 +119,7 @@ function Footer() {
                     <MdCall />
                     <span>
                       <h3>Call Us</h3>
-                      <a href="tel:+882-569-756">987-0986-0987</a>
+                      <a href="tel:+882-569-756">+ 123-456-7890</a>
                     </span>
                   </div>
                 </div>
@@ -134,7 +134,7 @@ function Footer() {
                           className="__cf_email__"
                           data-cfemail="4733352e212b223407202a262e2b6924282a"
                         >
-                          abaris@gmail.com
+                          demoseller@mail.com
                         </span>
                       </a>
                     </span>
@@ -185,9 +185,9 @@ function Footer() {
                       src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
                     ></script>
                     <script>document.write(new Date().getFullYear())</script>{" "}
-                    abaris. All Rights Reserved by 
+                    Demo Seller. All Rights Reserved by
                     <a href="https://AbarisSoftech.com/" target="_blank">
-                      AbarisSoftech
+                      Demo Seller
                     </a>
                   </p>
                 </div>

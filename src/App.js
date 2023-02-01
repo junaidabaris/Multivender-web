@@ -51,12 +51,17 @@ import AffiliateSystemPage from "./Customer-Panal/pages/affiliateSystem";
 import WithDrawRequestHistory from "./Customer-Panal/pages/withdrawRequestHistory";
 import AffiliateUserSetting from "./Customer-Panal/pages/affiliateUserSetting";
 import PaymentHistoryPage from "./Customer-Panal/pages/paymentHistory";
+import CustomerSupportTicketPage from "./Customer-Panal/pages/customerSupportTicketPage";
+import DashboardAdmin from "./Admin-pannel/Pages/dashboardRightSection";
+import DashboardRightSectionAdmin from "./Admin-pannel/Pages/dashboardRightSection";
+import DashboardAdminPage from "./Admin-pannel/Pages/dashboardPage";
 import ConversationPage from "./Customer-Panal/pages/conversation/Index";
 import AuctionPurchaseHistoryPage from "./Customer-Panal/pages/auctionPurchaseHistory/AuctionPurchaseHistory";
 
 
 function App() {
   const [show, setshow] = useState(true);
+
   return (
     <>
       {show && <Header />}
@@ -69,7 +74,7 @@ function App() {
         <Route path='/products' element={<ProductsPage />} />
         <Route path='/product-detail' element={<ProductDetailPage />} />
         <Route path='/viewAllBrand' element={<ViewAllBrandPage />} />
-        <Route path='/home/seller' element={<MainVender setshow={setshow} />}>
+        <Route path='/seller' element={<MainVender setshow={setshow} />}>
           <Route path='' element={<DashbordPage />} />
           <Route path='uploads' element={<UploadedFilesPage />} />
           <Route path='coupon' element={<CouponsPage />} />
@@ -82,11 +87,11 @@ function App() {
           <Route path='sellerProducts' element={<SellerProducts />} />
           <Route path='product-bulk-upload' element={<ProductBulkPage />} />
           <Route path='digitalproducts' element={<Digitalproducts />} />
-          <Route path={'conversations'} element={<ConversationsPage />} />
-          <Route path={'product-queries'} element={<ProductQuerriesPage />} />
-          <Route path={'support-ticket'} element={<SupportTicketPage />} />
+          <Route path='conversations' element={<ConversationsPage />} />
+          <Route path='product-queries' element={<ProductQuerriesPage />} />
+          <Route path='support-ticket' element={<SupportTicketPage />} />
           <Route path="pament-withdrow" element={<MoneyWithdrowPage />} />
-          <Route path="order-details" element={<OrderDetailPage />} />
+          <Route path="orders/order-details" element={<OrderDetailPage />} />
         </Route>
         <Route path='/customer' element={<DashbordCustomer />}>
           <Route path="purchase_history" element={<PurchaseHistoryPage />} />
@@ -95,15 +100,16 @@ function App() {
           {/* <Route path="compare" element={<ComparePage />} /> */}
           <Route path="wishlists" element={<WishlistPage />} />
           <Route path="sent-refund-request" element={<SendRefundPage />} />
-            <Route path="wallet" element={<WalletPage/>}/>
-            <Route path="earning-points" element={<EarningPointPage/>}/>
-            <Route path="profile" element={<ManegeProfilePage/>}/>
           {/* <Route path="wallet" element={<MyWallletPage />} /> */}
-          {/* <Route path="support-ticket" element={<SupportTicketPage />}/> */}
+          {/* <Route path="support-ticket" element={<SupportTicketPage />} /> */}
           <Route path="affiliate/user" element={<AffiliateSystemPage />} />
           <Route path="affiliate/payment/settings" element={<AffiliateUserSetting />} />
           <Route path="user/payment_history" element={<PaymentHistoryPage />} />
           <Route path="user/withdraw_request_history" element={<WithDrawRequestHistory />} />
+          <Route path="support-tiket" element={<CustomerSupportTicketPage />} />
+        </Route>
+        <Route path="/admin" element={<DashboardRightSectionAdmin setshow={setshow} />}>
+          <Route path="" element={<DashboardAdminPage />} />
           <Route path="conversation" element={<ConversationPage/>}/>
           <Route path="auction-purchase-history" element={<AuctionPurchaseHistoryPage/>}/>
         </Route>
