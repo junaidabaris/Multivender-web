@@ -52,7 +52,7 @@ import WithDrawRequestHistory from "./Customer-Panal/pages/withdrawRequestHistor
 import AffiliateUserSetting from "./Customer-Panal/pages/affiliateUserSetting";
 import PaymentHistoryPage from "./Customer-Panal/pages/paymentHistory";
 import CustomerSupportTicketPage from "./Customer-Panal/pages/customerSupportTicketPage";
-import DashboardAdmin from "./Admin-pannel/Pages/dashboardRightSection";
+// import DashboardAdmin from "./Admin-pannel/Pages/dashboardRightSection";
 import DashboardRightSectionAdmin from "./Admin-pannel/Pages/dashboardRightSection";
 import DashboardAdminPage from "./Admin-pannel/Pages/dashboardPage";
 
@@ -66,7 +66,6 @@ function App() {
       <Routes>
         <Route path='/' element={<Navigate to="/seller" />} />
         <Route path='/home' element={<HomePage />} />
-
         <Route path='*' element={<Navigate to="/page-not-found" />} />
         <Route path='page-not-found' element={<PageNotFoundPage />} />
         <Route path='/products' element={<ProductsPage />} />
