@@ -9309,3 +9309,31 @@ Buy Now Btn
   width: 500px !important;
   margin-left: ;
 } */
+
+.modal-content .modal-body-2 {
+  overflow-y: hidden !important;
+}
+.modal-content-2 {
+  margin: 0px !important;
+  width: 1500px !important;
+}
+.modal-content-3 {
+  width: 1500px !important;
+}
+.modle-manage {
+  /* width: 700px !important; */
+}
+.modle-manage .p-3-3 {
+  width: 100%;
+}
+.modal-dialog.modal-90w-w {
+  max-width: 100%;
+  margin: auto;
+}
+.modal-90w-w .modal-content{
+  width: 1500px;
+  margin: auto;
+}
+.lastWork-2 .fw-600 , .text-truncate {
+  color: white;
+}

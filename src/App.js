@@ -51,6 +51,8 @@ import AffiliateSystemPage from "./Customer-Panal/pages/affiliateSystem";
 import WithDrawRequestHistory from "./Customer-Panal/pages/withdrawRequestHistory";
 import AffiliateUserSetting from "./Customer-Panal/pages/affiliateUserSetting";
 import PaymentHistoryPage from "./Customer-Panal/pages/paymentHistory";
+import ConversationPage from "./Customer-Panal/pages/conversation/Index";
+import AuctionPurchaseHistoryPage from "./Customer-Panal/pages/auctionPurchaseHistory/AuctionPurchaseHistory";
 
 
 function App() {
@@ -102,6 +104,8 @@ function App() {
           <Route path="affiliate/payment/settings" element={<AffiliateUserSetting />} />
           <Route path="user/payment_history" element={<PaymentHistoryPage />} />
           <Route path="user/withdraw_request_history" element={<WithDrawRequestHistory />} />
+          <Route path="conversation" element={<ConversationPage/>}/>
+          <Route path="auction-purchase-history" element={<AuctionPurchaseHistoryPage/>}/>
         </Route>
       </Routes>
       {show && <Footer />}
