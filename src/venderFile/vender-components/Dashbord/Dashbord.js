@@ -615,7 +615,7 @@ function Dashbord (){
 
     </div>
     <div className="bg-white text-center py-3 px-15px px-lg-25px mt-auto border-sm-top">
-        <p className="mb-0">&copy; v6.3.3</p>
+        <p className="mb-0">&copy; All Right Reserved</p>
     </div>
     </>
 
