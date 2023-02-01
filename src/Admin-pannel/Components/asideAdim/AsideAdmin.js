@@ -77,7 +77,7 @@ function AsideAdmin() {
                                     </NavLink>
                                 </li>
                                 <li className="aiz-side-nav-item">
-                                    <NavLink href="https://mmslfashions.in/admin/pos-activation" className="aiz-side-nav-link">
+                                    <NavLink to="https://mmslfashions.in/admin/pos-activation" className="aiz-side-nav-link">
                                         <span className="aiz-side-nav-text">POS Configuration</span>
                                     </NavLink>
                                 </li>
