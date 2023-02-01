@@ -1,10 +1,15 @@
 import { useState } from "react"
 import { Link, NavLink } from "react-router-dom"
+import Accordion from 'react-bootstrap/Accordion';
 
 function AsideAdmin({ isActive, handleAsidebar }) {
 
     const [state, setState] = useState(false)
-    const [pacage, setStatePacage] = useState(false)
+    const [products, setProducts] = useState(false)
+    const [wholeSale, setWholsale] = useState(false)
+    const [sales, setSales] = useState(false)
+    const [refunds, setRefunds] = useState(false)
+    const [customers, setCustomers] = useState(false)
 
     return (
         <>
@@ -14,15 +19,45 @@ function AsideAdmin({ isActive, handleAsidebar }) {
                         {/* <img className="mw-100" src={"https://mmslfashions.in/public/assets/img/logo.png"} alt /> */}
                     </a>
                 </div>
-                {/* <div className="cancel-side-bar">
-                    <ImCross onClick={handleAsidebar} />
-                </div> */}
                 <div className="aiz-side-nav-wrap">
                     <div className="px-20px mb-3">
                         <input className="form-control bg-soft-secondary border-0 form-control-sm text-white" type="text" name placeholder="Search in menu" id="menu-search" onKeyUp="menuSearch()" fdprocessedid="axe2ae" />
                     </div>
                     <ul className="aiz-side-nav-list" id="search-menu">
                     </ul>
+
+                    {/* <Accordion defaultActiveKey="0">
+                        <Accordion.Item eventKey="0">
+                            <Accordion.Header>POS System</Accordion.Header>
+                            <Accordion.Body>
+                                <NavLink to="https://mmslfashions.in/admin/pos" className="aiz-side-nav-link ">
+                                    <span className="aiz-side-nav-text">POS Manager</span>
+                                </NavLink>
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        <Accordion.Item eventKey="1">
+                            <Accordion.Header>Accordion Item #2</Accordion.Header>
+                            <Accordion.Body>
+                               hello
+                            </Accordion.Body>
+                        </Accordion.Item>
+
+                        <Accordion.Item eventKey="1">
+                            <Accordion.Header>Accordion Item #2</Accordion.Header>
+                            <Accordion.Body>
+                               hello
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        <Accordion.Item eventKey="1">
+                            <Accordion.Header>Accordion Item #2</Accordion.Header>
+                            <Accordion.Body>
+                               fellow
+                            </Accordion.Body>
+                        </Accordion.Item>
+                    </Accordion> */}
+
+
+
                     <ul className="aiz-side-nav-list metismenu" id="main-menu" data-toggle="aiz-side-menu">
                         <li className="aiz-side-nav-item mm-active">
                             <Link href="https://mmslfashions.in/admin" className="aiz-side-nav-link active" aria-expanded="true">
@@ -52,13 +87,13 @@ function AsideAdmin({ isActive, handleAsidebar }) {
                         </li>
                         {/* Product */}
                         <li className="aiz-side-nav-item">
-                            <Link to="#" className="aiz-side-nav-link" onClick={() => { setState(!state) }}>
+                            <Link to="#" className="aiz-side-nav-link" onClick={() => { setProducts(!products) }}>
                                 <i className="las la-shopping-cart aiz-side-nav-icon" />
                                 <span className="aiz-side-nav-text">Products</span>
                                 <span className="aiz-side-nav-arrow" />
                             </Link>
                             {/*Submenu*/}
-                            <ul className={`aiz-side-nav-list level-2 mm-collapse ${state ? "mm-show" : "extra"}`} id="product">
+                            <ul className={`aiz-side-nav-list level-2 mm-collapse ${products ? "mm-show" : "extra"}`} id="product">
                                 <li className="aiz-side-nav-item">
                                     <Link className="aiz-side-nav-link" to="https://mmslfashions.in/admin/products/create">
                                         <span className="aiz-side-nav-text">Add New Product</span>
@@ -123,12 +158,12 @@ function AsideAdmin({ isActive, handleAsidebar }) {
                         </li>
                         {/* Wholesale Product */}
                         <li className="aiz-side-nav-item">
-                            <a href="#" className="aiz-side-nav-link">
+                            <Link to="#" className="aiz-side-nav-link" onClick={() => { setWholsale(!wholeSale) }}>
                                 <i className="las la-luggage-cart aiz-side-nav-icon" />
                                 <span className="aiz-side-nav-text">Wholesale Products</span>
                                 <span className="aiz-side-nav-arrow" />
-                            </a>
-                            <ul className="aiz-side-nav-list level-2 mm-collapse">
+                            </Link>
+                            <ul className={`aiz-side-nav-list level-2 mm-collapse ${wholeSale ? "mm-show" : "extra"}`} id="product">
                                 <li className="aiz-side-nav-item">
                                     <a className="aiz-side-nav-link" href="https://mmslfashions.in/admin/wholesale-product/create">
                                         <span className="aiz-side-nav-text">Add New Wholesale Product</span>
@@ -153,13 +188,13 @@ function AsideAdmin({ isActive, handleAsidebar }) {
                         </li>
                         {/* Sale */}
                         <li className="aiz-side-nav-item">
-                            <a href="#" className="aiz-side-nav-link">
+                            <Link to="#" className="aiz-side-nav-link" onClick={() => { setSales(!sales) }}>
                                 <i className="las la-money-bill aiz-side-nav-icon" />
                                 <span className="aiz-side-nav-text">Sales</span>
                                 <span className="aiz-side-nav-arrow" />
-                            </a>
+                            </Link>
                             {/*Submenu*/}
-                            <ul className="aiz-side-nav-list level-2 mm-collapse">
+                            <ul className={`aiz-side-nav-list level-2 mm-collapse ${sales ? "mm-show" : "extra"}`} id="product">
                                 <li className="aiz-side-nav-item">
                                     <a href="https://mmslfashions.in/admin/all_orders" className="aiz-side-nav-link ">
                                         <span className="aiz-side-nav-text">All Orders</span>
@@ -178,19 +213,19 @@ function AsideAdmin({ isActive, handleAsidebar }) {
                                 <li className="aiz-side-nav-item">
                                     <a href="https://mmslfashions.in/admin/orders_by_pickup_point" className="aiz-side-nav-link ">
                                         <span className="aiz-side-nav-text">Pick-up Point Order</span>
-                                    </a>
+                                    </a>setRefunds
                                 </li>
                             </ul>
                         </li>
                         {/* Deliver Boy Addon*/}
                         {/* Refund addon */}
                         <li className="aiz-side-nav-item">
-                            <a href="#" className="aiz-side-nav-link">
+                            <Link to="#" className="aiz-side-nav-link" onClick={() => { setRefunds(!refunds) }}>
                                 <i className="las la-backward aiz-side-nav-icon" />
                                 <span className="aiz-side-nav-text">Refunds</span>
                                 <span className="aiz-side-nav-arrow" />
-                            </a>
-                            <ul className="aiz-side-nav-list level-2 mm-collapse">
+                            </Link>
+                            <ul className={`aiz-side-nav-list level-2 mm-collapse ${refunds ? "mm-show" : "extra"}`} id="product">
                                 <li className="aiz-side-nav-item">
                                     <a href="https://mmslfashions.in/admin/refund-request-all" className="aiz-side-nav-link ">
                                         <span className="aiz-side-nav-text">Refund Requests</span>
@@ -215,12 +250,12 @@ function AsideAdmin({ isActive, handleAsidebar }) {
                         </li>
                         {/* Customers */}
                         <li className="aiz-side-nav-item">
-                            <a href="#" className="aiz-side-nav-link">
+                            <Link to="#" className="aiz-side-nav-link" onClick={() => { setCustomers(!customers) }}>
                                 <i className="las la-user-friends aiz-side-nav-icon" />
                                 <span className="aiz-side-nav-text">Customers</span>
                                 <span className="aiz-side-nav-arrow" />
-                            </a>
-                            <ul className="aiz-side-nav-list level-2 mm-collapse">
+                            </Link>
+                            <ul className={`aiz-side-nav-list level-2 mm-collapse ${customers ? "mm-show" : "extra"}`} id="product">
                                 <li className="aiz-side-nav-item">
                                     <a href="https://mmslfashions.in/admin/customers" className="aiz-side-nav-link">
                                         <span className="aiz-side-nav-text">Customer list</span>

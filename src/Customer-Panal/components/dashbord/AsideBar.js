@@ -3,7 +3,7 @@ import { Link, Outlet } from "react-router-dom"
 
 function AsideBar() {
   const [state, setState] = useState(false)
-  const [auction, setAution] = useState(false)
+  const [auction, setAuction] = useState(false)
 
 
   return (
@@ -81,7 +81,7 @@ function AsideBar() {
               </li>
 
               <li className="aiz-side-nav-item">
-                <Link to="#" className="aiz-side-nav-link" onClick={() => { setAution(!auction) }}>
+                <Link to="#" className="aiz-side-nav-link" onClick={() => { setAuction(!auction) }}>
                   <i className="las la-gavel aiz-side-nav-icon"></i>
                   <span className="aiz-side-nav-text">Auction</span>
                   <span className="aiz-side-nav-arrow"></span>
