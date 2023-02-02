@@ -63,6 +63,7 @@ import BrandPageAdmin from "./Admin-pannel/Pages/brandAdmin";
 import AttributeAdminPage from "./Admin-pannel/Pages/attributeAdminPage";
 import CategoriesPageAdmin from "./Admin-pannel/Pages/categoriesPageAdmin";
 import PosConfigurationPage from "./Admin-pannel/Pages/posConfigurationPage";
+import BiddedProductPage from "./Customer-Panal/pages/biddedProduct/BiddedProducts";
 
 
 function App() {
@@ -118,6 +119,7 @@ function App() {
           <Route path="wallet" element={<WalletPage />} />
           <Route path="earning-points" element={<EarningPointPage />} />
           <Route path="profile" element={<ManegeProfilePage />} />
+          <Route path="bidded-products" element={<BiddedProductPage/>}/>
         </Route>
         <Route path="/admin" element={<DashboardRightSectionAdmin setshow={setshow} />}>
           <Route path="" element={<DashboardAdminPage />} />

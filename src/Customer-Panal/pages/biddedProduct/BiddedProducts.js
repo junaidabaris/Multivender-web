@@ -1,9 +1,10 @@
+import BiddedProducts from "../../components/biddedProduct/biddedProducts"
 
-function BiddedProduct() {
+function BiddedProductPage() {
     return (
         <>
-        BiddedProduct
+        <BiddedProducts/>
         </>
     )
 }
-export default BiddedProduct
+export default BiddedProductPage
