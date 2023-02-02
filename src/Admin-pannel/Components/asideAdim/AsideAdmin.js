@@ -77,7 +77,7 @@ function AsideAdmin() {
                                     </NavLink>
                                 </li>
                                 <li className="aiz-side-nav-item">
-                                    <NavLink to="https://mmslfashions.in/admin/pos-activation" className="aiz-side-nav-link">
+                                    <NavLink to="pos-activation" className="aiz-side-nav-link">
                                         <span className="aiz-side-nav-text">POS Configuration</span>
                                     </NavLink>
                                 </li>
@@ -93,7 +93,7 @@ function AsideAdmin() {
                             {/*Submenu*/}
                             <ul className={`aiz-side-nav-list level-2 mm-collapse ${products ? "mm-show" : "extra"}`} id="product">
                                 <li className="aiz-side-nav-item">
-                                    <Link className="aiz-side-nav-link" to="#">
+                                    <Link className="aiz-side-nav-link" to="products/create">
                                         <span className="aiz-side-nav-text">Add New Product</span>
                                     </Link>
                                 </li>
@@ -108,9 +108,9 @@ function AsideAdmin() {
                                     </a>
                                 </li>
                                 <li className="aiz-side-nav-item">
-                                    <a href="#" className="aiz-side-nav-link ">
+                                    <Link to="products/seller" className="aiz-side-nav-link ">
                                         <span className="aiz-side-nav-text">Seller Products</span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="aiz-side-nav-item">
                                     <a href="https://mmslfashions.in/admin/digitalproducts" className="aiz-side-nav-link ">
@@ -128,19 +128,19 @@ function AsideAdmin() {
                                     </a>
                                 </li>
                                 <li className="aiz-side-nav-item">
-                                    <a href="https://mmslfashions.in/admin/categories" className="aiz-side-nav-link ">
+                                    <Link to="categories" className="aiz-side-nav-link ">
                                         <span className="aiz-side-nav-text">Category</span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="aiz-side-nav-item">
-                                    <a href="https://mmslfashions.in/admin/brands" className="aiz-side-nav-link ">
+                                    <Link to="brands" className="aiz-side-nav-link ">
                                         <span className="aiz-side-nav-text">Brand</span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="aiz-side-nav-item">
-                                    <a href="https://mmslfashions.in/admin/attributes" className="aiz-side-nav-link ">
+                                    <Link to="attributes" className="aiz-side-nav-link ">
                                         <span className="aiz-side-nav-text">Attribute</span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="aiz-side-nav-item">
                                     <a href="https://mmslfashions.in/admin/colors" className="aiz-side-nav-link ">

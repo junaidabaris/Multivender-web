@@ -57,6 +57,12 @@ import DashboardRightSectionAdmin from "./Admin-pannel/Pages/dashboardRightSecti
 import DashboardAdminPage from "./Admin-pannel/Pages/dashboardPage";
 import ConversationPage from "./Customer-Panal/pages/conversation/Index";
 import AuctionPurchaseHistoryPage from "./Customer-Panal/pages/auctionPurchaseHistory/AuctionPurchaseHistory";
+import AddNewProductsPage from "./Admin-pannel/Pages/addnewProductsPage";
+import SellerProductsPage from "./Admin-pannel/Pages/sellerProducts";
+import BrandPageAdmin from "./Admin-pannel/Pages/brandAdmin";
+import AttributeAdminPage from "./Admin-pannel/Pages/attributeAdminPage";
+import CategoriesPageAdmin from "./Admin-pannel/Pages/categoriesPageAdmin";
+import PosConfigurationPage from "./Admin-pannel/Pages/posConfigurationPage";
 import BiddedProductPage from "./Customer-Panal/pages/biddedProduct/BiddedProducts";
 
 
@@ -108,16 +114,21 @@ function App() {
           <Route path="user/withdraw_request_history" element={<WithDrawRequestHistory />} />
           <Route path="support-tiket" element={<CustomerSupportTicketPage />} />
           {/* <Route path="compare" element={<ComparePage/>}/>  */}
-          <Route path="conversation" element={<ConversationPage/>}/>
-          <Route path="auction-purchase-history" element={<AuctionPurchaseHistoryPage/>}/>
-          <Route path="wallet" element={<WalletPage/>}/>
-          <Route path="earning-points" element={<EarningPointPage/>}/>
-          <Route path="profile" element={<ManegeProfilePage/>}/>
+          <Route path="conversation" element={<ConversationPage />} />
+          <Route path="auction-purchase-history" element={<AuctionPurchaseHistoryPage />} />
+          <Route path="wallet" element={<WalletPage />} />
+          <Route path="earning-points" element={<EarningPointPage />} />
+          <Route path="profile" element={<ManegeProfilePage />} />
           <Route path="bidded-products" element={<BiddedProductPage/>}/>
         </Route>
         <Route path="/admin" element={<DashboardRightSectionAdmin setshow={setshow} />}>
           <Route path="" element={<DashboardAdminPage />} />
-          
+          <Route path="products/create" element={<AddNewProductsPage />} />
+          <Route path="products/seller" element={<SellerProductsPage />} />
+          <Route path="brands" element={<BrandPageAdmin />} />
+          <Route path="attributes" element={<AttributeAdminPage />} />
+          <Route path="categories" element={<CategoriesPageAdmin />} />
+          <Route path="pos-activation" element={<PosConfigurationPage />} />
         </Route>
       </Routes>
       {show && <Footer />}
