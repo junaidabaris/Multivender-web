@@ -57,6 +57,7 @@ import DashboardRightSectionAdmin from "./Admin-pannel/Pages/dashboardRightSecti
 import DashboardAdminPage from "./Admin-pannel/Pages/dashboardPage";
 import ConversationPage from "./Customer-Panal/pages/conversation/Index";
 import AuctionPurchaseHistoryPage from "./Customer-Panal/pages/auctionPurchaseHistory/AuctionPurchaseHistory";
+import BiddedProductPage from "./Customer-Panal/pages/biddedProduct/BiddedProducts";
 
 
 function App() {
@@ -112,6 +113,7 @@ function App() {
           <Route path="wallet" element={<WalletPage/>}/>
           <Route path="earning-points" element={<EarningPointPage/>}/>
           <Route path="profile" element={<ManegeProfilePage/>}/>
+          <Route path="bidded-products" element={<BiddedProductPage/>}/>
         </Route>
         <Route path="/admin" element={<DashboardRightSectionAdmin setshow={setshow} />}>
           <Route path="" element={<DashboardAdminPage />} />

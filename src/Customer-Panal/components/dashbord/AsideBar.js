@@ -118,7 +118,7 @@ function AsideBar() {
                   id="product"
                 >
                   <li className="aiz-side-nav-item">
-                    <Link to="#" className="aiz-side-nav-link">
+                    <Link to="bidded-products" className="aiz-side-nav-link">
                       <span className="aiz-side-nav-text">Bidded Products</span>
                     </Link>
                   </li>
