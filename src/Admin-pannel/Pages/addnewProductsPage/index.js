@@ -12,10 +12,6 @@ function AddNewProductsPage() {
     return (
         <>
             {/* <AddNewProducts /> */}
-
-
-
-
             <div className="aiz-main-content">
                 <div className="px-15px px-lg-25px">
                     <div className="aiz-titlebar text-left mt-2 mb-3">
@@ -25,8 +21,6 @@ function AddNewProductsPage() {
                         {/* Error Meassages */}
                         <form className="form form-horizontal mar-top" action="https://mmslfashions.in/admin/products/store" method="POST" encType="multipart/form-data" id="choice_form">
                             <div className="row gutters-5">
-
-
                                 <div className="col-lg-8">
                                     <input type="hidden" name="_token" defaultValue="6klBhNOhEcSYzHAP1WU8ctR90lIocmkKBETVGkNx" />                <input type="hidden" name="added_by" defaultValue="admin" />
                                     <ProductsInformationAdmin />
@@ -37,11 +31,8 @@ function AddNewProductsPage() {
                                     <ProductsDescriptionAdmin />
                                     <SeoMetaTagsAdmin />
                                 </div>
-
                                 <div className="col-lg-4">
-
                                     <ShippingConfigurationAdmin />
-
                                     <div className="card">
                                         <div className="card-header">
                                             <h5 className="mb-0 h6">Low Stock Quantity Warning</h5>
